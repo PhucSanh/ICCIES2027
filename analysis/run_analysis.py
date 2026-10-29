@@ -306,10 +306,19 @@ else:
 
 # ---------------------------------------------------------------- free-text replies
 rep = d[d.reply.astype(str).str.strip().ne("—") & d.reply.notna()][["format", "reply", "ACCEPTANCE", "REJECTION"]]
-R["replies"] = rep.to_dict("records")
+R["replies"] = {"count": int(len(rep)), "by_format": rep["format"].value_counts().to_dict(),
+    "note": "Individual replies are withheld; this public artifact contains aggregate counts only."}
 
+# Strict JSON: undefined statistics are null rather than non-standard NaN.
+def json_safe(value):
+    if isinstance(value, dict): return {k: json_safe(v) for k, v in value.items()}
+    if isinstance(value, list): return [json_safe(v) for v in value]
+    if isinstance(value, (float, np.floating)) and not np.isfinite(value): return None
+    return value
+R['analysis_scope'] = 'Original student-cluster and mixed-model analyses; revised repository intervals and adjusted models are in source_audit.json. Row-level p-values are not used for paper inference.'
+R = json_safe(R)
 with open(OUT / "results.json", "w") as f:
-    json.dump(R, f, indent=1, ensure_ascii=False, default=lambda o: float(o) if isinstance(o, (np.floating, np.integer)) else str(o))
+    json.dump(R, f, indent=1, ensure_ascii=False, allow_nan=False, default=lambda o: float(o) if isinstance(o, (np.floating, np.integer)) else str(o))
 
 # ---------------------------------------------------------------- LaTeX tables
 def fp(p):

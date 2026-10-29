@@ -82,10 +82,17 @@ def main():
         'Researching': ['researching', 'criteria', 'next_steps', 'code_evidence']}
     schema_ok = pd.Series([all(key in j for key in required_fields[fmt])
         for j, fmt in zip(feedback, d['format'])], index=d.index)
+    if any(j.get('feedback_type') != fmt for j, fmt in zip(feedback, d['format'])):
+        raise ValueError('Feedback JSON and assigned configuration labels disagree')
     bad_students = set(d.loc[~schema_ok, 'sid'])
     schema_counts = {fmt: {'instances': int(d['format'].eq(fmt).sum()),
         'missing_required_fields': int((d['format'].eq(fmt) & ~schema_ok).sum())}
         for fmt in FORMATS}
+    if not d.context.isin(['Codebase', 'Raw', 'Graph']).all():
+        raise ValueError('Unknown context label')
+    d['AAI15'] = (d[[x for x in ITEMS if x != 'REJECTION']].sum(axis=1) + 6 - d.REJECTION) / 15
+    d['AF'] = d[['AFFECT', 'PSYCHOLOGICAL SAFETY']].mean(axis=1)
+    d['AI'] = d[['ACCEPTANCE', 'WILLINGNESS', 'BEHAVIORAL INTENTION']].mean(axis=1)
     d['AAI'] = d[[x for x in ITEMS if x != 'REJECTION']].mean(axis=1)
     d['PQ'] = d[['ACCURACY', 'SPECIFICITY', 'CLARITY', 'TRANSPARENCY']].mean(axis=1)
     d['PU'] = d[['USEFULNESS', 'ACTIONABILITY']].mean(axis=1)
@@ -115,6 +122,29 @@ def main():
         pairs.append({'a': a, 'b': b, 'mean_difference': float(diff.mean()),
                       'ci90_repository': [float(lo), float(hi)],
                       'within_exploratory_margin_025': bool(lo > -.25 and hi < .25)})
+    # Additional contrasts use the same repository draws and student weights.
+    contrasts = {}
+    for outcome in ['ACTIONABILITY', 'ACCEPTANCE', 'AAI15']:
+        ow = d.pivot(index='sid', columns='format', values=outcome).reindex(wide.index)[FORMATS]
+        rows = []
+        for a, b in itertools.combinations(FORMATS, 2):
+            delta = (ow[a] - ow[b]).to_numpy()
+            totals = np.array([delta[idx].sum() for idx in wi])
+            sizes = np.array([len(idx) for idx in wi])
+            boots = totals[sampled].sum(axis=1) / sizes[sampled].sum(axis=1)
+            rows.append({'a': a, 'b': b, 'mean_difference': float(delta.mean()),
+                'ci95_repository': np.percentile(boots, [2.5, 97.5]).tolist(),
+                'ci90_repository': np.percentile(boots, [5, 95]).tolist()})
+        contrasts[outcome] = rows
+    configuration_means = {}
+    for fmt in FORMATS:
+        configuration_means[fmt] = {}
+        for outcome in ['AAI', 'PQ', 'PU', 'TR', 'AF', 'AI']:
+            totals = np.array([d.loc[d.repo.eq(repo) & d['format'].eq(fmt), outcome].sum() for repo in repos])
+            sizes = np.array([int((d.repo.eq(repo) & d['format'].eq(fmt)).sum()) for repo in repos])
+            boots = totals[sampled].sum(axis=1) / sizes[sampled].sum(axis=1)
+            configuration_means[fmt][outcome] = {'mean': float(d.loc[d['format'].eq(fmt), outcome].mean()),
+                'ci95_repository': np.percentile(boots, [2.5, 97.5]).tolist()}
     # Student fixed effects: demean predictors/outcomes within student, then OLS.
     # Repository bootstrap preserves repeated students and all shared questions.
     predictors = ['PQ', 'PU', 'TR', 'AFFECT', 'PSYCHOLOGICAL SAFETY']
@@ -130,10 +160,41 @@ def main():
         for idx in selected_rows:
             if np.linalg.matrix_rank(x[idx]) == x.shape[1]:
                 boot.append(np.linalg.lstsq(x[idx], y[idx], rcond=None)[0])
+        if len(boot) != B:
+            raise ValueError('Rank-deficient predictor bootstrap; inspect before reporting')
         intervals = np.percentile(np.array(boot), [2.5, 97.5], axis=0)
         within_models[outcome] = {'bootstrap_valid': len(boot), 'predictors': {
             name: {'b': float(coefficient[i]), 'ci95_repository': intervals[:, i].tolist()}
             for i, name in enumerate(predictors)}}
+    # Sensitivity: control configuration in the association models. The three
+    # dummy columns are demeaned within student, just like the other predictors.
+    config = pd.get_dummies(d['format'], dtype=float).reindex(columns=FORMATS[1:])
+    xc = (config - config.groupby(d.sid).transform('mean')).to_numpy()
+    adjusted_models = {}
+    def fit_boot(design, response):
+        coef = np.linalg.lstsq(design, response, rcond=None)[0]
+        boot = [np.linalg.lstsq(design[idx], response[idx], rcond=None)[0]
+                for idx in selected_rows if np.linalg.matrix_rank(design[idx]) == design.shape[1]]
+        if len(boot) != B:
+            raise ValueError('Rank-deficient bootstrap design; inspect before reporting')
+        return coef, np.percentile(boot, [2.5, 97.5], axis=0)
+    for outcome in ['ACCEPTANCE', 'WILLINGNESS', 'BEHAVIORAL INTENTION']:
+        y = (d[outcome] - d.groupby('sid')[outcome].transform('mean')).to_numpy()
+        coef, ci = fit_boot(np.column_stack([x, xc]), y)
+        adjusted_models[outcome] = {name: {'b': float(coef[i]), 'ci95_repository': ci[:, i].tolist()}
+            for i, name in enumerate(predictors)}
+    raw_context = d.context.isin(['Codebase', 'Raw']).astype(float)
+    context_within = (raw_context - raw_context.groupby(d.sid).transform('mean')).to_numpy()
+    y = (d.AAI - d.groupby('sid').AAI.transform('mean')).to_numpy()
+    coef, ci = fit_boot(np.column_stack([context_within, xc]), y)
+    context_model = {'b_raw': float(coef[0]), 'ci95_repository': ci[:, 0].tolist(),
+        'specification': 'student fixed effects and configuration indicators; repository bootstrap'}
+    nonstraight_sids = d.groupby('sid').straight.any()
+    complete_ns = wide.loc[~nonstraight_sids.reindex(wide.index)]
+    scoring = {'AAI15_mean': float(d.AAI15.mean()),
+        'AAI15_friedman': friedman_stat(d.pivot(index='sid', columns='format', values='AAI15')[FORMATS].to_numpy()),
+        'nonstraight_complete_students': len(complete_ns),
+        'nonstraight_complete_means': complete_ns.mean().to_dict()}
     provenance = Counter(','.join(model_names(j)) for j, fmt in zip(feedback, d['format']) if fmt == 'Researching')
     baseline = json.loads(Path(__file__).with_name('results.json').read_text())
     differences = {item: float(d[item].mean() - next(r['mean'] for r in baseline['rq1_items'] if r['item'] == item)) for item in ITEMS}
@@ -155,7 +216,10 @@ def main():
         'original_result_checks': {'item_mean_max_absolute_difference': max(abs(v) for v in differences.values()),
             'AAI_friedman_recomputed': chi, 'AAI_friedman_archived': expected_chi,
             'AAI_friedman_absolute_difference': abs(chi - expected_chi)},
-        'means': means, 'AAI_pairs': pairs, 'within_student_models': within_models,
+        'means': means, 'configuration_means': configuration_means, 'AAI_pairs': pairs,
+        'additional_contrasts': contrasts, 'scoring_sensitivity': scoring,
+        'within_student_models': within_models, 'within_student_models_configuration_adjusted': adjusted_models,
+        'context_within_student': context_model,
         'limitations': ['Exported model names are metadata, not independent provider logs.',
             'No causal comparison of individual configuration features.',
             'Context is selected by method count; no isolated raw-code/graph effect.',

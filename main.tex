@@ -15,6 +15,7 @@
 \usepackage{color}
 \renewcommand\UrlFont{\color{blue}\rmfamily}
 \urlstyle{rm}
+\setlength{\emergencystretch}{1em}
 % \Description is defined by llncs v2.25; keep the file compiling with older class versions.
 \providecommand{\Description}[1]{}
 
@@ -43,7 +44,7 @@ Phuc~Thinh~Do\textsuperscript{(\Letter)}}
 \maketitle
 
 \begin{abstract}
-LLM-generated feedback can support comprehension checks on students' own software projects, but perceived quality and willingness to use the feedback need not coincide. We evaluated PACE, a repository-grounded question-and-feedback system, with 86 students from 28 team repositories. Each student answered four questions and rated one instance of each of four feedback configurations assigned by random permutation: Sandwich, Rubric, Explainable and Researching. The configurations differ in content structure and, for Researching, the intended model pipeline. Across 344 instances, an exploratory fourteen-item composite averaged 4.07/5 (95\% repository-cluster bootstrap CI [3.90, 4.23]); 79.9\% of ratings endorsed the AI's judgement, 68.0\% endorsed future use and 41.9\% endorsed motivation. Configuration differences in the composite were small (Friedman $\chi^2(3)=23.04$, $p<.001$, Kendall's $W=.089$). The configurations designed to include explicit next steps had higher mean actionability, but the design does not isolate the effect of next steps. All six pairwise 90\% confidence intervals for the composite lay within an exploratory $\pm0.25$-point margin; no difference was detected on the Acceptance item. An observational comparison of raw-code and graph contexts was inconclusive ($b=0.08$, 95\% CI $[-0.04,0.20]$). These findings concern students' perceptions, rather than expert-verified correctness, actual revision or learning gains.
+LLM-generated feedback can support comprehension checks on students' own software projects, but perceived quality and willingness to use the feedback need not coincide. We evaluated PACE, a repository-grounded question-and-feedback system, with 86 students from 28 team repositories. Each student answered four questions and rated one instance of each of four feedback configurations assigned by random permutation: Sandwich, Rubric, Explainable and Researching. The configurations differ in content structure and, for Researching, the intended model pipeline. Across 344 instances, an exploratory fourteen-item composite averaged 4.07/5 (95\% repository-cluster bootstrap CI [3.90, 4.23]); 79.9\% of ratings endorsed the AI's judgement, 68.0\% endorsed future use and 41.9\% endorsed motivation. Configuration differences in the composite were small (exploratory Friedman $\chi^2(3)=23.04$, $p<.001$, Kendall's $W=.089$). The configurations designed to include explicit next steps had higher mean actionability, but the design does not isolate the effect of next steps. All six repository-bootstrap 90\% intervals for composite mean differences lay within an exploratory $\pm0.25$-point margin; Acceptance-item intervals included zero. An observational within-student comparison of raw-code and graph contexts was inconclusive ($b=0.07$, 95\% CI $[-0.02,0.20]$). These findings concern students' perceptions, rather than expert-verified correctness, actual revision or learning gains.
 
 \keywords{LLM-generated feedback \and Feedback acceptance \and Programming education \and Software engineering education \and Human--AI trust}
 \end{abstract}
@@ -52,9 +53,9 @@ LLM-generated feedback can support comprehension checks on students' own softwar
 \section{Introduction}
 \label{sec:intro}
 
-Feedback is one of the strongest levers on learning, but its effect depends on what the learner does with it~\cite{hattie2007power,shute2008focus}. A comment that is correct yet ignored, or that the student does not believe, changes nothing. Research on feedback literacy therefore treats the student's uptake---making sense of a comment, judging it, and deciding to act---as part of the feedback process rather than its aftermath~\cite{carless2018feedback,winstone2017supporting}.
+Feedback is one of the strongest levers on learning, but its effect depends on what the learner does with it~\cite{hattie2007power,shute2008focus}. Technically correct feedback does not by itself demonstrate that students will understand or use it. Research on feedback literacy therefore treats the student's uptake---making sense of a comment, judging it, and deciding to act---as part of the feedback process rather than its aftermath~\cite{carless2018feedback,winstone2017supporting}.
 
-LLMs can identify issues in student code and explain them in readable language, but their comments may also be misleading~\cite{hellas2023exploring,kiesler2023exploring,dai2023can}. Guardrails can support guidance without supplying complete solutions~\cite{liffiton2023codehelp}. Their growing role in computing education~\cite{denny2024computing,kasneci2023chatgpt} makes student acceptance worth examining separately from technical quality. Students often find AI feedback clear and specific~\cite{zhang2024students,escalante2023ai}, yet a Java-course experiment favoured instructor feedback in usefulness and improvement~\cite{er2025assessing}, and disclosing AI provenance can alter perceptions~\cite{nazaretsky2024ai}.
+LLMs can identify issues in student code and explain them in readable language, but their comments may also be misleading~\cite{hellas2023exploring,kiesler2023exploring,dai2023can}. Guardrails can support guidance without supplying complete solutions~\cite{liffiton2023codehelp}. Their growing role in computing education~\cite{denny2024computing,kasneci2023chatgpt} makes student acceptance worth examining separately from technical quality. Students valued code-specific feedback in a programming study~\cite{zhang2024students}; an ENL writing study found split preferences between tutor and AI feedback~\cite{escalante2023ai}. A Java-course experiment favoured instructor feedback~\cite{er2025assessing}, while provenance disclosure can alter perceptions~\cite{nazaretsky2024ai}.
 
 Two gaps motivate this study. First, project courses assess evolving team repositories that no student wrote alone. Questions about learners' own programs can probe comprehension~\cite{lehtinen2021lets}, but perceptions of LLM feedback on those answers remain underexplored in the literature discussed here. Second, deployed systems bundle praise, criteria, evidence and model orchestration into different configurations, each with a pedagogical rationale~\cite{parkes2013feedback,jonsson2007use,khosravi2022explainable,du2024improving}. We compare students' ratings of these bundles without assuming identical underlying judgements.
 
@@ -75,13 +76,13 @@ Our contributions are a repository-grounded comprehension workflow, a field eval
 \label{sec:related}
 
 \subsection{LLM-Generated Feedback in Programming Education}
-Hellas et al.\ found that GPT-3.5 often identified an actual issue in novice programmers' requests but also missed issues or invented them~\cite{hellas2023exploring}. Kiesler et al.\ similarly cautioned that formative programming feedback could mislead novices~\cite{kiesler2023exploring}. Dai et al.\ compared ChatGPT and instructor feedback~\cite{dai2023can}, while CodeHelp demonstrated guarded assistance at course scale~\cite{liffiton2023codehelp}. We complement these evaluations with student perceptions of feedback on comprehension answers about team repositories, extending questions about learners' own code~\cite{lehtinen2021lets}.
+Automated programming feedback predates LLMs: a review of 101 tools found more emphasis on identifying mistakes than on supporting next steps~\cite{keuning2019automated}. Hellas et al.\ found that GPT-3.5 often identified an actual issue in novice programmers' requests but also missed issues or invented them~\cite{hellas2023exploring}. Kiesler et al.\ similarly cautioned that formative programming feedback could mislead novices~\cite{kiesler2023exploring}. Dai et al.\ compared ChatGPT and instructor feedback~\cite{dai2023can}, while CodeHelp demonstrated guarded assistance at course scale~\cite{liffiton2023codehelp}. We complement these evaluations with student perceptions of feedback on comprehension answers about team repositories, extending questions about learners' own code~\cite{lehtinen2021lets}.
 
 \subsection{Student Perceptions and Acceptance of AI Feedback}
 Usefulness and trust are related to intentions to continue using a system~\cite{davis1989perceived,venkatesh2003user}, while appropriate reliance requires calibration to actual reliability~\cite{lee2004trust}. Algorithm aversion~\cite{dietvorst2015algorithm} and appreciation~\cite{logg2019algorithm} both occur. In programming education, Zhang et al.\ reported preferences for code-referencing feedback~\cite{zhang2024students}; Er et al.\ found advantages for instructor feedback~\cite{er2025assessing}; and Nazaretsky et al.\ found perceptions sensitive to AI provenance~\cite{nazaretsky2024ai}. These findings motivate measuring trust and intention alongside perceived quality.
 
 \subsection{Feedback Configurations}
-Sandwich feedback improved perceptions without improving performance in a controlled study~\cite{parkes2013feedback}. Rubrics make criteria explicit~\cite{jonsson2007use}. Evidence-based explanations may support appropriate trust~\cite{khosravi2022explainable}. Multiagent debate has improved factuality~\cite{du2024improving}, while model-as-judge evaluations have shown agreement with human preferences~\cite{zheng2023judging}. These results motivate our configurations but do not establish their effectiveness in this setting. Our within-student comparison evaluates complete bundles.
+Sandwich feedback improved perceptions without improving performance in a controlled study~\cite{parkes2013feedback}. Rubrics make criteria explicit~\cite{jonsson2007use}. Evidence-based explanations may support appropriate trust~\cite{khosravi2022explainable}. Multiagent debate has improved factuality on benchmark tasks~\cite{du2024improving}, but our sequential inspection--synthesis pipeline does not implement debate. Model-as-judge benchmarks also document position and verbosity biases alongside agreement with human preferences~\cite{zheng2023judging}. Neither result validates PACE feedback against expert judgements. Our within-student comparison evaluates complete bundles.
 
 %=============================================================================
 \section{The PACE System}
@@ -104,7 +105,7 @@ Figure~\ref{fig:overview} summarises the pipeline. PACE consists of an ASP.NET C
   \node[box, below=10mm of q] (ans) {Student answers\\4 questions};
   \node[box, left=of ans] (perm) {Random\\permutation of\\4 configurations};
   \node[box, left=of perm, text width=21mm] (ctx) {Reference\\context (code\\or graph) + guards};
-  \node[box, left=of ctx, text width=15mm] (llm) {DeepSeek-V3\\($T=0.2$, JSON)};
+  \node[box, left=of ctx, text width=15mm] (llm) {DeepSeek chat\\($T=0.2$, JSON)};
   \node[fmt, below=7mm of llm, xshift=-4mm] (f1) {Sandwich};
   \node[fmt, right=2mm of f1] (f2) {Rubric};
   \node[fmt, right=2mm of f2] (f3) {Explainable};
@@ -140,9 +141,9 @@ The four configurations bundle different content requirements and generation pro
   \item \textbf{Sandwich}: positives, constructive criticism, and next steps.
   \item \textbf{Rubric}: a list of criteria that the model names for the question (e.g., understanding of the business flow, identification of the guard condition), each with a 1--5 score and a comment.
   \item \textbf{Explainable}: a \emph{code evidence} field that cites methods, steps or conditions from the context, and a \emph{logic explanation} that relates them to the answer.
-  \item \textbf{Researching}: a configuration designed as a two-stage ensemble in which DeepSeek-V3 first inspects the answer against the code and GPT-OSS-120B (served by Groq) then writes a combined report: an overall comment, positives, criticism, next steps, code evidence, two scored criteria, and a consensus summary with pedagogical guidance.
+  \item \textbf{Researching}: a two-stage design: a DeepSeek model checks the answer against the code, then GPT-OSS-120B (served by Groq) synthesises a report: an overall comment, positives, criticism, next steps, code evidence, two scored criteria, and a consensus summary with pedagogical guidance.
 \end{itemize}
-Only Sandwich and Researching are designed to require an explicit list of next steps. The three single-model configurations use DeepSeek-V3 (\texttt{deepseek-chat}; temperature 0.2, JSON mode). If the second model in the Researching pipeline fails, the system falls back to the single-model path; all 86 Researching records list both model roles in the nested \texttt{researching.models\_involved} metadata. This supports the recorded two-model configuration; independent provider execution logs are not part of the export.
+Only Sandwich and Researching are designed to require an explicit list of next steps. The three single-model configurations specify \texttt{deepseek-chat} (temperature 0.2, JSON mode). This API alias does not identify an immutable model version. If the second model in the Researching pipeline fails, the system falls back to the single-model path; all 86 Researching records list both roles in nested metadata (DeepSeek-V3 and Groq-GPT-OSS-120B). This supports the recorded two-model configuration; independent provider execution logs are not part of the export.
 
 The assigned configuration is the experimental manipulation. Comparisons use assigned labels, including any system guardrail responses. When a student submits $n=4$ answers, PACE shuffles the four configurations and assigns one to each answer, so every student sees every configuration exactly once, in random order.
 
@@ -197,25 +198,25 @@ Separate item & Rejection$^\dagger$ & I tend to want to refute or argue against 
 \end{table}
 
 \subsection{Data Set}
-The survey export contained 344 answer records from 86 submissions, one submission per student. We screened every record on metadata only (no explicit development-fixture marker in the export, feedback stored, all fifteen ratings present); all 344 passed, so none was excluded. Every student rated all four configurations, which gives 86 complete blocks and 86 instances per configuration. The export also stores the context type of each question: 280 instances (157 questions) came from graph-based questions and 64 instances (33 questions, 13 repositories) from raw-code questions. Thirty-two students received at least one raw-code question, and 26 of them answered questions of both types.
+The survey export contained 344 answer records from 86 submissions, one submission per student. We screened every record on metadata only (no explicit development-fixture marker in the export, feedback stored, all fifteen ratings present); all 344 passed, so none was excluded. Every student rated all four configurations, which gives 86 complete blocks and 86 instances per configuration. One assigned Rubric instance contains a guardrail refusal with next steps but no criteria; the other 85 contain criteria. We retain assigned labels rather than reclassifying outputs. The export also stores the context type of each question: 280 instances (157 questions) came from graph-based questions and 64 instances (33 questions, 13 repositories) from raw-code questions. Thirty-two students received at least one raw-code question, and 26 of them answered questions of both types.
 
 \subsection{Analysis}
 \paragraph{Scores.} The \emph{AI agreement index} (AAI) is an exploratory composite: the mean of fourteen non-reversed items across several domains. It is not a validated unidimensional measure of agreement. Construct scores are item means, and the Acceptance item is also reported separately. The decision to exclude \textsc{Rejection} followed inspection of its inconsistent behaviour (Section~\ref{sec:quality}); it is therefore a data-informed scoring choice~\cite{vansonderen2013ineffectiveness}.
 
 \paragraph{Reliability and data quality.} We report Cronbach's $\alpha$~\cite{cronbach1951coefficient} and McDonald's $\omega_t$ from a one-factor solution~\cite{hayes2020use}, and flag \emph{straight-lined} responses---identical ratings on all fifteen items---following Kim et al.~\cite{kim2019straightlining}.
 
-\paragraph{RQ1.} We report item means with 95\% confidence intervals from a cluster bootstrap that resamples students (5{,}000 replicates), since each student rated four feedback instances. To test whether agreement exceeds the neutral midpoint, we aggregate to one mean per student and apply a one-sample Wilcoxon signed-rank test against 3, with the matched-pairs rank-biserial correlation $r_{rb}$ as effect size and Holm correction across the fifteen items~\cite{holm1979simple}. To explore conditional associations with acceptance, we fit student fixed-effects regressions after demeaning predictors and outcomes within each student:
+\paragraph{RQ1.} We report item means, distributions and 95\% percentile confidence intervals from resampling all 28 repositories with replacement (5{,}000 replicates; seed 20261029). Each sampled repository contributes all its students and questions; means weight feedback instances equally. These intervals allow dependence within repositories, assuming independence across repositories~\cite{cameron2015cluster}. To explore conditional associations with acceptance, we fit student fixed-effects regressions after demeaning predictors and outcomes within each student:
 \begin{equation}
- y_{ij}-\bar y_j = \sum_{k=1}^{5}\beta_k(z_{kij}-\bar z_{kj}) + e_{ij},
+ y_{ij}-\bar y_j = \sum_{k=1}^{5}\beta_k(z_{kij}-\bar z_{kj}) + \sum_{c=2}^{4}\gamma_c(D_{cij}-\bar D_{cj}) + e_{ij},
  \label{eq:drivers}
 \end{equation}
-where $y$ is Acceptance, Willingness or Behavioural intention. Predictors are perceived quality, perceived utility, trust, motivation and psychological safety, standardised using their full-sample SDs before demeaning. We separate the two affect items because their joint reliability is low. Percentile 95\% confidence intervals resample all 28 repositories with replacement (5{,}000 replicates), preserving the students and shared questions within each repository. These models describe contemporaneous within-student associations, not causal drivers or differences between students.
+Here $i$ indexes feedback instances, $j$ students, $y$ is Acceptance, Willingness or Behavioural intention, and $D_c$ are configuration indicators (Sandwich reference). Predictors are perceived quality, perceived utility, trust, motivation and psychological safety, standardised using their full-sample SDs before demeaning. We separate the two affect items because their joint reliability is low. Regression intervals use the same repository bootstrap. These models describe contemporaneous within-student associations, not causal drivers or differences between students.
 
-\paragraph{RQ2.} The primary test is a Friedman test~\cite{friedman1937use} on AAI over the 86 complete blocks, with Kendall's $W$ as effect size, followed by Holm-corrected Friedman tests on each construct and item and Wilcoxon signed-rank tests for the six configuration pairs. Because the Friedman test uses only the within-student rank order, we also fit a linear mixed model, AAI $\sim$ configuration $+\,(1\,|\,\text{student})$, compared to an intercept-only model by a likelihood-ratio test, and a second model that adds feedback length and answer length as covariates. Because significance says nothing about whether a difference matters, we also run equivalence tests~\cite{lakens2017equivalence}: a pair of configurations meets the exploratory equivalence criterion when the 90\% confidence interval of the paired mean difference lies within $\pm0.25$ points, a quarter of one scale step. This pragmatic, exploratory margin has not been calibrated against learning outcomes or elicited from stakeholders; equivalence claims are restricted to AAI under this margin. A sensitivity analysis repeats the Friedman test without straight-lined responses.
+\paragraph{RQ2.} We describe mean differences using repository-bootstrap intervals and use a Friedman test~\cite{friedman1937use} on AAI over the 86 complete blocks, with Kendall's $W$ as effect size. We apply separate Holm corrections across five construct tests, fifteen item tests, and six paired Wilcoxon tests~\cite{holm1979simple}. Rank-test $p$-values assume independent student blocks and are exploratory because repositories are shared. Because the Friedman test uses only the within-student rank order, we also fit a linear mixed model, AAI $\sim$ configuration $+\,(1\,|\,\text{student})$, compared to an intercept-only model by a likelihood-ratio test, and a second model that adds feedback length and answer length as covariates. Because significance says nothing about whether a difference matters, we examine an equivalence criterion~\cite{lakens2017equivalence}: the repository-bootstrap 90\% interval of each paired mean difference must lie within $\pm0.25$ points, a quarter of one scale step. This pragmatic, exploratory margin has not been calibrated against learning outcomes or elicited from stakeholders; equivalence claims are restricted to AAI under this margin. Sensitivity analyses retain complete student blocks after excluding straight-lined rows or the guardrail-refusal block, and recompute contrasts using all fifteen items with Rejection reverse-scored.
 
-\paragraph{RQ3.} Context type was not randomised: the router uses graph context for functions involving more than ten methods and raw code otherwise. Complexity, question context and evaluator context are therefore coupled. We report descriptive means and an exploratory model, AAI $\sim$ context $+$ configuration $+\,(1\,|\,\text{student})$. Its coefficient is an adjusted association, not an isolated context effect or a test of equivalence. Row-level Mann--Whitney tests are not used for inference because observations within students are dependent.
+\paragraph{RQ3.} Context type was not randomised: the router uses graph context for functions involving more than ten methods and raw code otherwise. Complexity, question context and evaluator context are therefore coupled. We report descriptive means and an exploratory student fixed-effects model with context and configuration indicators, using repository-bootstrap intervals. The context coefficient uses within-student variation, supplied by 26 students exposed to both types. It remains an association confounded by complexity and is not an isolated context effect.
 
-\paragraph{Dependence and scope.} Answers are assigned within students, who share repositories and questions. Repository resampling preserves students and shared questions: each belongs to one repository. Item intervals, rank tests and student-intercept models do not fully capture repository dependence. Straight-lining is a response-pattern flag, not proof of inattention.
+\paragraph{Dependence and scope.} Answers are assigned within students, who share repositories and questions. Repository resampling preserves students and shared questions: each belongs to one repository. Rank tests and student-intercept mixed models do not fully capture repository dependence; substantive comparisons therefore emphasise repository-bootstrap intervals. Straight-lining is a response-pattern flag, not proof of inattention.
 
 Analyses use Python and statsmodels~\cite{seabold2010statsmodels}. Supplementary scripts accompany the paper. Identifier-bearing raw exports are withheld; an anonymised release remains to be prepared.
 
@@ -225,44 +226,45 @@ Analyses use Python and statsmodels~\cite{seabold2010statsmodels}. Supplementary
 
 \subsection{Reliability and Data Quality}
 \label{sec:quality}
-The fourteen non-reversed items had high internal consistency ($\alpha=.936$, $\omega_t=.939$). The subscales were acceptable to excellent (perceived quality $\alpha=.91$, perceived utility $.78$, trust $.80$, acceptance \& intention $.78$), with the exception of affect ($.56$): its two items, motivation and psychological safety, should not be assumed to form a single reliable construct. Internal consistency alone does not establish dimensionality or construct validity. Two observations qualify this.
+The fourteen non-reversed items had high internal consistency ($\alpha=.936$, $\omega_t=.939$). Item-group estimates were $\alpha=.91$ for perceived quality, $.78$ for utility, $.80$ for trust and $.78$ for acceptance \& intention. Affect had lower consistency ($.56$): its two items, motivation and psychological safety, should not be assumed to form a single reliable construct. Internal consistency alone does not establish dimensionality or construct validity. Two observations qualify this.
 
 First, 64 of the 344 responses (18.6\%) were straight-lined, and 11 of the 86 students (12.8\%) straight-lined all four of their ratings. Excluding straight-lined response rows lowers $\alpha$ only to $.90$, so the scale's consistency does not rest on straight-lining.
 
-Second, straight-lining hid most of the signal in the reverse-worded \textsc{Rejection} item. Across all responses, \textsc{Rejection} correlated only weakly and negatively with \textsc{Acceptance} (Spearman $\rho=-.14$), and its item--rest correlation was close to zero ($-.03$). Once straight-lined responses were removed, the negative association was larger ($\rho=-.40$ with \textsc{Acceptance} and $\rho=-.41$ with the agreement index, descriptively). A student who rates every statement 4 also ``agrees'' to wanting to argue with the AI, a known weakness of reverse wording~\cite{vansonderen2013ineffectiveness}; we therefore keep the item out of the exploratory composite. These correlations describe response patterns; row-level significance tests would ignore repeated ratings.
+Second, the association involving the reverse-worded \textsc{Rejection} item differed with response-pattern exclusions. Across all responses, \textsc{Rejection} correlated only weakly and negatively with \textsc{Acceptance} (Spearman $\rho=-.14$), and its reverse-scored item--rest correlation was close to zero ($-.03$). Once straight-lined responses were removed, the negative association was larger ($\rho=-.40$ with \textsc{Acceptance} and $\rho=-.41$ with the agreement index, descriptively). A student who rates every statement 4 also ``agrees'' to wanting to argue with the AI, a known weakness of reverse wording~\cite{vansonderen2013ineffectiveness}; we therefore keep the item out of the exploratory composite. These correlations describe response patterns; row-level significance tests would ignore repeated ratings.
 
 \subsection{RQ1: How Students Judge the Feedback}
 
 \begin{table}[t]
-\caption{Item ratings across 344 feedback instances. CI: 95\% cluster-bootstrap interval of the mean. Agree/Disagree: \% of ratings $\geq4$ / $\leq2$. $r_{rb}$ and $p_\text{Holm}$: one-sample Wilcoxon test of student means against the midpoint 3 ($n=86$). $^\dagger$Reverse-worded, not reverse-scored.}
+\caption{Item ratings across 344 feedback instances. CI: 95\% repository-bootstrap interval of the mean (28 repositories). Agree/Disagree: \% of ratings $\geq4$ / $\leq2$. $^\dagger$Reverse-worded, not reverse-scored.}
 \label{tab:rq1}
 \centering\scriptsize
 \setlength\tabcolsep{4pt}
-\begin{tabular}{@{}lcccccc@{}}
+\begin{tabular}{@{}lcccc@{}}
 \toprule
-Item & Mean (SD) & 95\% CI & Agree & Disagree & $r_{rb}$ & $p_\text{Holm}$ \\
+Item & Mean (SD) & 95\% CI & Agree & Disagree \\
 \midrule
-% generated by analysis/run_analysis.py -> analysis/tables/rq1_items.tex
-Accuracy & 4.38 (0.96) & [4.21, 4.53] & 83.4 & 5.5 & 0.98 & $<$.001 \\
-Specificity & 4.36 (0.94) & [4.18, 4.53] & 83.4 & 5.2 & 0.96 & $<$.001 \\
-Clarity & 4.33 (0.88) & [4.18, 4.49] & 81.7 & 3.5 & 0.99 & $<$.001 \\
-Transparency & 4.29 (0.95) & [4.12, 4.46] & 79.9 & 4.9 & 0.97 & $<$.001 \\
-Usefulness & 4.09 (0.77) & [3.96, 4.22] & 84.0 & 2.9 & 0.96 & $<$.001 \\
-Actionability & 4.13 (0.88) & [3.97, 4.28] & 80.8 & 4.9 & 0.95 & $<$.001 \\
-Competence trust & 4.17 (0.98) & [4.00, 4.34] & 76.5 & 4.9 & 0.95 & $<$.001 \\
-Reliability & 3.88 (0.80) & [3.73, 4.01] & 78.5 & 4.9 & 0.90 & $<$.001 \\
-Fairness & 4.15 (0.79) & [4.01, 4.28] & 81.4 & 2.3 & 0.99 & $<$.001 \\
-Affect & 3.53 (0.87) & [3.39, 3.68] & 41.9 & 4.9 & 0.93 & $<$.001 \\
-Psych.\ safety & 3.83 (0.85) & [3.69, 3.97] & 76.2 & 7.3 & 0.90 & $<$.001 \\
-Acceptance & 4.09 (0.82) & [3.95, 4.22] & 79.9 & 3.5 & 0.98 & $<$.001 \\
-Rejection$^\dagger$ & 2.87 (1.22) & [2.64, 3.11] & 30.8 & 48.8 & -0.21 & .110 \\
-Willingness & 3.97 (0.69) & [3.85, 4.07] & 81.4 & 2.3 & 0.98 & $<$.001 \\
-Behav.\ intention & 3.80 (0.85) & [3.64, 3.94] & 68.0 & 5.2 & 0.90 & $<$.001 \\
+% BEGIN GENERATED rq1_items
+Accuracy & 4.38 (0.96) & [4.14, 4.61] & 83.4 & 5.5 \\
+Specificity & 4.36 (0.94) & [4.10, 4.60] & 83.4 & 5.2 \\
+Clarity & 4.33 (0.88) & [4.09, 4.56] & 81.7 & 3.5 \\
+Transparency & 4.29 (0.95) & [4.03, 4.54] & 79.9 & 4.9 \\
+Usefulness & 4.09 (0.77) & [3.93, 4.24] & 84.0 & 2.9 \\
+Actionability & 4.13 (0.88) & [3.90, 4.34] & 80.8 & 4.9 \\
+Competence trust & 4.17 (0.98) & [3.94, 4.41] & 76.5 & 4.9 \\
+Reliability & 3.88 (0.80) & [3.73, 4.01] & 78.5 & 4.9 \\
+Fairness & 4.15 (0.79) & [3.98, 4.31] & 81.4 & 2.3 \\
+Affect & 3.53 (0.87) & [3.38, 3.71] & 41.9 & 4.9 \\
+Psych.\ safety & 3.83 (0.85) & [3.65, 3.99] & 76.2 & 7.3 \\
+Acceptance & 4.09 (0.82) & [3.90, 4.27] & 79.9 & 3.5 \\
+Rejection$^\dagger$ & 2.87 (1.22) & [2.56, 3.20] & 30.8 & 48.8 \\
+Willingness & 3.97 (0.69) & [3.86, 4.08] & 81.4 & 2.3 \\
+Behav.\ intention & 3.80 (0.85) & [3.65, 3.94] & 68.0 & 5.2 \\
+% END GENERATED rq1_items
 \bottomrule
 \end{tabular}
 \end{table}
 
-Table~\ref{tab:rq1} and Fig.~\ref{fig:likert} show that ratings were positive on every non-reversed item. The agreement index averaged 4.07 (SD 0.64, 95\% repository-bootstrap CI [3.90, 4.23]) and was above the midpoint for nearly all students ($r_{rb}=.98$, $p<.001$). Students most often endorsed usefulness (84.0\% agree), accuracy and specificity (83.4\% each), and explicit disagreement stayed at or below 7.3\% on all fourteen items. On the reverse-worded item, 48.8\% rejected the idea of arguing with the AI and 30.8\% endorsed it.
+Table~\ref{tab:rq1} and Fig.~\ref{fig:likert} show that ratings were positive on every non-reversed item. The agreement index averaged 4.07 (SD 0.64, 95\% repository-bootstrap CI [3.90, 4.23]). Students most often endorsed usefulness (84.0\% agree), accuracy and specificity (83.4\% each), and explicit disagreement stayed at or below 7.3\% on all fourteen items. On the reverse-worded item, 48.8\% rejected the idea of arguing with the AI and 30.8\% endorsed it.
 
 The profile is far from flat. Students readily said that a comment was correct, specific and clear, and most also extended trust to the system's competence (76.5\%) and consistency (78.5\%). They were less ready to commit to it: 68.0\% intended to keep using PACE in future projects. The weakest item by a wide margin was affect: only 41.9\% said the feedback made them motivated to keep learning, and more than half (53.2\%) chose the neutral option. Endorsement of perceived quality was more frequent than endorsement of motivation.
 
@@ -275,10 +277,10 @@ The profile is far from flat. Students readily said that a comment was correct, 
 \end{figure}
 
 \paragraph{Conditional associations with acceptance.}
-Table~\ref{tab:drivers} reports within-student coefficients and repository-bootstrap intervals. Utility was positively associated with acceptance and future-use intention. Trust and perceived quality were positively associated with acceptance, but their future-use intervals included zero. Motivation was positively associated with willingness; psychological-safety intervals included zero throughout. The fifteen exploratory intervals are unadjusted, and coefficient differences were not directly tested.
+Table~\ref{tab:drivers} reports within-student coefficients and repository-bootstrap intervals. Utility was positively associated with acceptance and future-use intention. Trust was positively associated with acceptance. Perceived-quality intervals included zero after configuration adjustment; without that adjustment its acceptance interval was [0.02, 0.44]. Motivation was positively associated with willingness; psychological-safety intervals included zero throughout. The fifteen exploratory intervals are not adjusted for multiplicity, and coefficient differences were not directly tested.
 
 \begin{table}[t]
-\caption{Student fixed-effects regressions (Eq.~\ref{eq:drivers}). Cells show rating points per full-sample predictor SD [95\% repository-bootstrap CI]; 5{,}000 replicates. Motivation and psychological safety are separate predictors.}
+\caption{Student fixed-effects regressions (Eq.~\ref{eq:drivers}). Cells show rating points per full-sample predictor SD [95\% repository-bootstrap CI]; 5{,}000 replicates. Motivation and psychological safety are separate predictors; configuration indicators are included.}
 \label{tab:drivers}
 \centering\scriptsize
 \setlength\tabcolsep{3pt}
@@ -286,17 +288,16 @@ Table~\ref{tab:drivers} reports within-student coefficients and repository-boots
 \toprule
 Predictor & Acceptance & Willingness & Behav.\ intention \\
 \midrule
-Perceived quality & $0.22$ [$ 0.02, 0.44 $] & $0.09$ [$ -0.19, 0.37 $] & $0.07$ [$ -0.15, 0.33 $] \\
-Perceived utility & $0.32$ [$ 0.17, 0.46 $] & $0.07$ [$ -0.11, 0.19 $] & $0.23$ [$ 0.07, 0.37 $] \\
-Trust & $0.23$ [$ 0.09, 0.40 $] & $0.04$ [$ -0.10, 0.21 $] & $0.15$ [$ -0.10, 0.40 $] \\
-Motivation & $-0.10$ [$ -0.21, 0.02 $] & $0.25$ [$ 0.01, 0.46 $] & $-0.05$ [$ -0.18, 0.09 $] \\
-Psych.\ safety & $-0.04$ [$ -0.12, 0.01 $] & $-0.01$ [$ -0.16, 0.08 $] & $0.07$ [$ -0.09, 0.25 $] \\
+% BEGIN GENERATED within_student_models
+Perceived quality & $0.19$ [$ -0.03, 0.41 $] & $0.03$ [$ -0.23, 0.32 $] & $0.10$ [$ -0.14, 0.36 $] \\
+Perceived utility & $0.36$ [$ 0.20, 0.51 $] & $0.14$ [$ -0.06, 0.25 $] & $0.21$ [$ 0.06, 0.35 $] \\
+Trust & $0.24$ [$ 0.09, 0.42 $] & $0.06$ [$ -0.08, 0.22 $] & $0.13$ [$ -0.14, 0.40 $] \\
+Motivation & $-0.09$ [$ -0.20, 0.03 $] & $0.27$ [$ 0.03, 0.46 $] & $-0.05$ [$ -0.20, 0.10 $] \\
+Psych.\ safety & $-0.05$ [$ -0.12, 0.00 $] & $-0.03$ [$ -0.17, 0.07 $] & $0.07$ [$ -0.09, 0.25 $] \\
+% END GENERATED within_student_models
 \bottomrule
 \end{tabular}
 \end{table}
-
-\paragraph{AI criterion scores and student ratings.}
-Among 171 instances with criterion scores (Rubric and Researching), descriptive Spearman correlations were $-.15$ with acceptance, $-.12$ with fairness and $-.07$ with AAI. These descriptive associations mix repeated students and scoring criteria; they do not establish self-serving responses.
 
 \subsection{RQ2: Differences Between Feedback Configurations}
 
@@ -318,35 +319,35 @@ Trust & 4.12 (0.78) & 3.91 (0.75) & 4.11 (0.70) & 4.12 (0.65) & 24.98 & $<$.001 
 Affect & 3.74 (0.69) & 3.65 (0.75) & 3.63 (0.76) & 3.72 (0.68) & 10.22 & .050 & 0.040 \\
 Acceptance \& intention & 3.95 (0.70) & 3.91 (0.71) & 3.96 (0.62) & 3.98 (0.62) & 3.70 & .295 & 0.014 \\
 \midrule
-Feedback length (words) & 248 & 267 & 215 & 623 & 172.19 & $<$.001 & 0.667 \\
+Feedback length (units) & 248 & 267 & 215 & 623 & 172.19 & $<$.001 & 0.667 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-The four configurations received similar but not identical ratings (Table~\ref{tab:rq2}, Fig.~\ref{fig:formats}). Mean agreement ranged from 4.01 (Rubric) to 4.12 (Sandwich). The Friedman test detected a difference ($\chi^2(3)=23.04$, $p<.001$), but its size was small ($W=.09$). Pairwise tests located it between Sandwich and the two configurations not designed to require next steps: Sandwich was rated 0.11 points above Rubric ($p_\text{Holm}=.002$) and 0.06 points above Explainable ($p_\text{Holm}=.023$); no other pair differed after correction. The mixed model, which weighs the size of each difference rather than its rank, was less conclusive (likelihood-ratio $\chi^2(3)=6.65$, $p=.084$; Rubric vs.\ Sandwich $b=-0.11$, $p=.013$). Many students rated the configurations almost alike but in a consistent order, which a rank test detects more easily.
+The four configurations received similar but not identical ratings (Table~\ref{tab:rq2}, Fig.~\ref{fig:formats}). Mean AAI ranged from 4.01 (Rubric) to 4.12 (Sandwich). The Friedman test detected a difference ($\chi^2(3)=23.04$, $p<.001$), but its size was small ($W=.09$). Exploratory pairwise rank tests located it between Sandwich and the two configurations not designed to require next steps: Sandwich was rated 0.11 points above Rubric ($p_\text{Holm}=.002$) and 0.06 points above Explainable ($p_\text{Holm}=.023$); no other pair differed after correction. The mixed-model omnibus test was less conclusive (likelihood-ratio $\chi^2(3)=6.65$, $p=.084$). Rank and mean-based analyses target different aspects of responses; the rank result does not establish a large mean difference.
 
-The differences were concentrated in two constructs. Perceived utility varied most ($\chi^2(3)=45.57$, $p_\text{Holm}<.001$, $W=.18$): Sandwich (4.27) and Researching (4.22) were rated more useful and actionable than Rubric (4.01) and Explainable (3.95). At the item level this gap was largest for actionability (4.33 and 4.28 vs.\ 3.97 and 3.95; $p_\text{Holm}<.001$), which is consistent with their explicit lists of next steps, although this feature was not manipulated independently. Trust also varied ($\chi^2(3)=24.98$, $p_\text{Holm}<.001$, $W=.10$), with Rubric lowest (3.91 vs.\ 4.11--4.12); Rubric feedback also received the lowest ratings for competence trust (3.97) and fairness (3.95), and fairness asks whether the assessment reflects the answer's effort and quality. Sandwich feedback was rated highest on affect (3.69 vs.\ 3.41 for Explainable; item $p_\text{Holm}=.016$). No difference was detected for perceived quality or acceptance \& intention, and no difference was detected on the \textsc{Acceptance} item across configurations (4.05--4.12, $p_\text{Holm}=1.00$). Researching feedback had a lower mean clarity rating than the others (4.19 vs.\ 4.36--4.41), but this did not survive correction ($p_\text{Holm}=.22$).
+The exploratory rank differences were concentrated in utility and trust. Perceived utility varied most ($\chi^2(3)=45.57$, $p_\text{Holm}<.001$, $W=.18$): Sandwich (4.27) and Researching (4.22) were rated more useful and actionable than Rubric (4.01) and Explainable (3.95). At the item level this gap was largest for actionability (4.33 and 4.28 vs.\ 3.97 and 3.95; $p_\text{Holm}<.001$), with a Sandwich--Explainable mean difference of 0.37 (95\% repository-bootstrap CI [0.16, 0.57]). The configurations differ in more than next steps, so this contrast does not identify that feature's effect. Trust also varied ($\chi^2(3)=24.98$, $p_\text{Holm}<.001$, $W=.10$), with Rubric lowest (3.91 vs.\ 4.11--4.12); Rubric feedback also received the lowest ratings for competence trust (3.97) and fairness (3.95). Sandwich feedback was rated highest on the motivation item (3.69 vs.\ 3.41 for Explainable; item $p_\text{Holm}=.016$). No difference was detected for perceived quality or acceptance \& intention, and no difference was detected on the \textsc{Acceptance} item across configurations (4.05--4.12, $p_\text{Holm}=1.00$). All six 95\% repository-bootstrap Acceptance contrasts included zero; for example, Rubric--Researching was $-0.07$ [$-0.27,0.12$]. This does not establish item-level equivalence. Researching feedback had a lower mean clarity rating than the others (4.19 vs.\ 4.36--4.41), but this did not survive correction ($p_\text{Holm}=.22$).
 
-Researching feedback was longer: its mean length was 623 words versus 215--267 for the other configurations ($\chi^2(3)=172.2$, $p<.001$, $W=.67$). Adding feedback length and answer length to the mixed model left the estimated Rubric--Sandwich gap near $-0.11$ points ($p=.018$). The covariates were not statistically distinguishable from zero (feedback length $b=-0.06$, $p=.16$; answer length $b=0.01$, $p=.78$). Feedback length is generated by the assigned configuration, so this adjustment does not identify a direct configuration effect or rule out a role for length. Token and monetary cost comparisons are omitted pending an auditable usage-log extraction.
+Researching feedback was longer: its mean length was 623 whitespace-separated text units versus 215--267 for the other configurations ($\chi^2(3)=172.2$, $p<.001$, $W=.67$). Adding feedback length and answer length to the mixed model left the estimated Rubric--Sandwich gap near $-0.11$ points ($p=.018$). The length-covariate intervals included zero. Feedback length is generated by the assigned configuration, so this adjustment does not identify a direct configuration effect or rule out a role for length. The length proxy counts strings in stored JSON, excluding identifiers, configuration labels and model names; it is neither Vietnamese lexical word count nor provider token usage. Cost comparisons require usage logs.
 
-For all six configuration pairs, the 90\% confidence interval of the paired difference in AAI fell inside $\pm0.25$ points; the most extreme bound was 0.21 (Sandwich vs.\ Rubric, interval $[0.02, 0.21]$). The Friedman difference remained after excluding straight-lined responses (280 retained responses, of which 64 students supplied complete blocks; $\chi^2(3)=23.51$, $p<.001$, $W=.12$), with the same ordering. A repository-cluster bootstrap also placed all six 90\% intervals inside the exploratory $\pm0.25$ margin; the Sandwich--Rubric interval was $[0.008,0.212]$. This sensitivity result concerns AAI only and is not an item-level equivalence claim.
+All six repository-bootstrap 90\% intervals for paired AAI mean differences were inside the exploratory $\pm0.25$ margin; Sandwich--Rubric was $[0.008,0.212]$. This supports only small average composite differences under that chosen margin, not equal item profiles or a validated practical-equivalence threshold. Retaining all fifteen items with Rejection reverse-scored gave a mean of 4.01 and again placed all six intervals inside the margin. The Friedman result persisted after excluding straight-lined rows (64 complete students, $\chi^2(3)=23.51$, $W=.12$) and after excluding the single guardrail-refusal block (85 students, $\chi^2(3)=23.22$). These response exclusions are sensitivity checks, not evidence that flagged responses are invalid.
 
 In the intercept-only model, most AAI variance lay between students: the intraclass correlation of the agreement index was .77 (also .77 without straight-lined responses), indicating substantial clustering by student. This variance decomposition does not identify why configuration differences are small.
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=0.68\textwidth]{figures/format_constructs.pdf}
-\Description{Dot plot with confidence intervals of the agreement index and five construct scores for each of the four feedback configurations. Most points lie between about 3.6 and 4.4. The intervals overlap heavily, except in perceived utility, where Sandwich and Researching sit to the right of Rubric and Explainable, and in trust, where Rubric sits to the left of the other three.}
-\caption{Agreement index and construct scores by feedback configuration, with 95\% cluster-bootstrap confidence intervals. The dotted line marks the neutral midpoint.}
+\Description{Dot plot with confidence intervals of the agreement index and five construct scores for each of the four feedback configurations. Most points lie between about 3.6 and 4.4. Repository-bootstrap intervals show uncertainty around the means. Utility means are higher for Sandwich and Researching; the Rubric trust mean is lower than the other configurations.}
+\caption{Agreement index and construct scores by feedback configuration, with 95\% repository-bootstrap confidence intervals (28 clusters). The dotted line marks the neutral midpoint.}
 \label{fig:formats}
 \end{figure}
 
 \ifrqthree
 \subsection{RQ3: Raw-Code versus Graph-Based Questions}
-Mean AAI was 4.14 for raw-code and 4.06 for graph-based questions (Table~\ref{tab:rq3}). The exploratory model estimated $b=0.08$ ($SE=0.06$, $p=.22$, 95\% CI $[-0.04,0.20]$). Among the 26 students exposed to both types, pooled means were 3.99 and 4.01, respectively; these are descriptive rather than a balanced paired estimate. Perceived quality averaged 4.52 versus 4.30, and transparency 4.59 versus 4.22. The routing rule ties context to method count, and the same context type feeds the evaluator. These estimates cannot separate complexity, question generation and feedback context; the non-significant coefficient does not establish equivalence.
+Mean AAI was 4.14 for raw-code and 4.06 for graph-based questions (Table~\ref{tab:rq3}). The student fixed-effects model with configuration adjustment estimated $b=0.07$ (95\% repository-bootstrap CI $[-0.02,0.20]$). Among the 26 students exposed to both types, pooled means were 3.99 and 4.01, respectively; these are descriptive rather than a balanced paired estimate. Perceived quality averaged 4.52 versus 4.30, and transparency 4.59 versus 4.22. The routing rule ties context to method count, and the same context type feeds the evaluator. These estimates cannot separate complexity, question generation and feedback context; the interval crossing zero does not establish equivalence.
 
 \begin{table}[t]
-\caption{Agreement by question context type, mean. $b$: mixed-model estimate for raw code vs.\ graph, controlling for format, with a random intercept per student.}
+\caption{Agreement by question context type, mean. $b$: within-student estimate for raw code vs.\ graph, controlling for configuration.}
 \label{tab:rq3}
 \centering\scriptsize
 \setlength\tabcolsep{5pt}
@@ -357,14 +358,14 @@ Context & $n$ & AAI & Quality & Utility & Trust & Acceptance \& int. \\
 Graph & 280 & 4.06 & 4.30 & 4.11 & 4.05 & 3.94 \\
 Raw code & 64 & 4.14 & 4.52 & 4.12 & 4.16 & 4.00 \\
 \midrule
-\multicolumn{7}{@{}l}{$b_\text{raw}=0.08$ ($SE=0.06$), $p=.22$; exploratory student-intercept model} \\
+\multicolumn{7}{@{}l}{$b_\text{raw}=0.07$, CI95\% $[-0.02,0.20]$; repository-bootstrap interval} \\
 \bottomrule
 \end{tabular}
 \end{table}
 \fi
 
 \subsection{Students' Free-Text Replies}
-The existing export includes 160 optional free-text replies (46.5\% of instances). We use these as illustrative observations rather than a validated thematic prevalence analysis; no independently coded category counts are reported. Replies include proposed revisions and follow-up questions about error codes or the order of checks. One student disputed an error name and stated that validation returns \texttt{409 SCHEDULE\_CONFIRMED} before the lock check; another objected to the type of request assumed in the feedback. These are students' reported objections, not independently verified error classifications. A further reply described a single block of feedback text as difficult to read. Observed revision and an expert audit are needed to establish whether these comments correspond to uptake or technical errors.
+The export includes 160 optional free-text replies (46.5\% of instances). We treat them as illustrations, without independently coded prevalence estimates. Replies included proposed revisions, questions about error codes and check ordering, objections to assumed request types, and a complaint that a single feedback block was difficult to read. These student reports have not been verified against code or observed revisions, so they establish neither technical errors nor feedback uptake.
 
 %=============================================================================
 \section{Discussion}
@@ -374,13 +375,13 @@ The existing export includes 160 optional free-text replies (46.5\% of instances
 Endorsement of accuracy and usefulness exceeded endorsement of motivation and future use. Utility was positively associated with acceptance and intention within students; trust was associated with acceptance, consistent with technology-acceptance research~\cite{davis1989perceived,venkatesh2003user}. Motivation was associated with willingness when separated from psychological safety. These self-reports do not establish actual revision or correctness. Specific objections in replies illustrate the need to verify appropriate reliance independently~\cite{lee2004trust}.
 
 \paragraph{Configuration bundles motivate controlled tests.}
-Small AAI differences coexisted with an actionability gap of about 0.38 points between Sandwich and Explainable. The configurations designed to include next steps had higher mean actionability, but content, scoring, length and model orchestration also differed. An experiment manipulating next steps independently is needed. Researching produced more text without a detected AAI advantage over Sandwich; efficiency claims require usage logs. The high student ICC supports accounting for individual differences in comparisons.
+Small AAI differences coexisted with an actionability gap of about 0.37 points between Sandwich and Explainable. The configurations designed to include next steps had higher mean actionability, but content, scoring, length and model orchestration also differed. An experiment manipulating next steps independently is needed. Researching produced more text without a detected AAI advantage over Sandwich; efficiency claims require usage logs. The high student ICC supports accounting for individual differences in comparisons.
 
 \paragraph{Response patterns and measurement.}
-Each student supplied sixty ratings; 18.6\% of response sets were straight-lined, complicating the reverse-worded item~\cite{kim2019straightlining}. A shorter instrument requires validation. Attention checks, behavioural probes and provenance markers merit evaluation~\cite{vansonderen2013ineffectiveness}; straight-lining alone does not establish inattention.
+Each student supplied sixty ratings; 18.6\% of response sets were straight-lined. Response burden and reverse wording warrant scrutiny~\cite{kim2019straightlining,vansonderen2013ineffectiveness}. A shorter instrument, attention checks and behavioural probes merit evaluation; straight-lining alone does not establish inattention.
 
 \paragraph{Threats to validity.}
-\emph{Internal validity.} Assignment within students limits stable individual differences, but each configuration evaluates a different answer. Question difficulty, order and carryover remain possible sources of variation; the comparison cannot isolate individual content features. Exported Researching model roles are not independently corroborated by provider logs. \emph{Construct validity.} The study-specific instrument lacks established factorial validity. AAI spans heterogeneous domains, exclusion of Rejection was data-informed, and the affect pair has low reliability. Straight-lining does not establish inattention. Self-reports collected together may share common-method variance~\cite{podsakoff2003common}. No observed revision, learning outcome or expert correctness measure was collected, and free-text observations are illustrative rather than validated thematic prevalence estimates. \emph{External validity.} Classroom recruitment at one university, preparation for a defence panel, and novelty may shape responses. RQ3 is observational and confounded by method count and the evaluator's context. \emph{Statistical conclusion validity.} Student blocks are used in primary comparisons, and repository resampling preserves shared-student and shared-question dependence for the added estimates. Rank tests and student-intercept models do not model all of this dependence. Predictor regressions isolate within-student variation, but do not establish causal effects or adjust for every possible time-varying confounder. Mixed models assume interval scaling and serve as sensitivity analyses; the AAI omnibus Friedman and mixed-model tests differ at the .05 threshold. The $\pm0.25$ equivalence margin is pragmatic, exploratory and specific to AAI. The fifteen exploratory regression intervals are unadjusted, and only 28 repository clusters are available.
+\emph{Internal validity.} Assignment within students limits stable individual differences, but each configuration evaluates a different answer. Question difficulty, order and carryover remain possible sources of variation; the comparison cannot isolate individual content features. Exported Researching model roles are not independently corroborated by provider logs. \emph{Construct validity.} The study-specific instrument lacks established factorial validity. AAI spans heterogeneous domains, exclusion of Rejection was data-informed, and the affect pair has low reliability. Straight-lining does not establish inattention. Self-reports collected together may share common-method variance~\cite{podsakoff2003common}. No observed revision, learning outcome or expert correctness measure was collected, and free-text observations are illustrative rather than validated thematic prevalence estimates. \emph{External validity.} Classroom recruitment at one university, preparation for a defence panel, and novelty may shape responses. RQ3 is observational and confounded by method count and the evaluator's context. \emph{Statistical conclusion validity.} Student blocks are used in rank comparisons, and repository resampling preserves shared-student and shared-question dependence for the added estimates. Rank tests and student-intercept models do not model all of this dependence. Predictor regressions isolate within-student variation, but do not establish causal effects or adjust for every possible time-varying confounder. High ratings may limit discrimination. Mixed models assume interval scaling and serve as sensitivity analyses; the AAI omnibus Friedman and mixed-model tests differ at the .05 threshold. The $\pm0.25$ equivalence margin is pragmatic, exploratory and specific to AAI. The fifteen exploratory regression intervals are unadjusted for multiplicity, and only 28 repository clusters are available. Bootstrap coverage with this number of clusters is approximate; neither classroom sampling nor repository resampling makes the sample representative.
 
 %=============================================================================
 \section{Conclusion}

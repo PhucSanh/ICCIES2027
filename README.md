@@ -1,59 +1,94 @@
-# ICCIES 2027 – PACE feedback-agreement paper
+# ICCIES 2027 — PACE feedback-perception study
+
+The `codex-review` branch contains the revised manuscript and its self-review.
+Read `SELF_REVIEW.md` for evidence, limitations and author confirmations still
+needed before submission. The branch is ready for critical review; it is not a
+claim that ethics or conference-policy requirements have been resolved.
 
 ## Build
-```
-latexmk -pdf main.tex        # or: pdflatex main && bibtex main && pdflatex main && pdflatex main
-```
-Overleaf: upload the whole folder, set compiler = pdfLaTeX, main document = main.tex.
-`llncs.cls`/`splncs04.bst` here are TeX Live v2.24; replace with the v2.25 files from the
-conference template if you prefer (both work; `\Description` is provided for v2.24).
-
-## Layout
-- `main.tex` – paper (LNCS, ICCIES limit is 12–15 pages)
-- `refs.bib` – 34 references, each checked against DOI / publisher / DBLP
-- `figures/` – vector PDFs produced by the analysis script (Fig. 1 is TikZ inside main.tex;
-  `item_correlations.pdf` is not used in the paper, kept as supplementary)
-- `analysis/run_analysis.py` – original analysis (seeded student bootstrap)
-- `analysis/results.json` – original analysis results (model provenance corrected)
-- `analysis/tables/*.tex` – generated table bodies (already pasted into main.tex)
-
-## Re-run the analysis
-```
-pip install pandas openpyxl scipy statsmodels matplotlib
-python3 analysis/run_analysis.py data/PACE-BaiDaNop-DaDanhGiaAI-2026-10-29_5.xlsx
-```
-The survey export is NOT in the repo (`data/` is git-ignored) because it contains student IDs and emails. Ask the team for the file and put it in `data/`.
-
-## Data (export 2026-10-29 "(5)")
-All 344 records (86 students x 4 formats) pass the screening rules
-(no synthetic_fixture marker, feedback stored, all 15 ratings present) -> nothing excluded.
-RQ3 context type is read directly from the column "Nguồn sinh câu hỏi" (Codebase = raw code, Graph).
-Older versions and old exports are kept locally in `_archive/` (git-ignored).
-
-## Revised analyses and source verification
-
-`REVISION_NOTES.md` records changes, completed checks and unresolved author inputs.
-`main.tex` is the revised source. The PDF must be rebuilt whenever the source changes.
 
 ```bash
-python3 analysis/check_export.py "/path/to/PACE-BaiDaNop-DaDanhGiaAI-2026-10-29 (5).xlsx"
+latexmk -pdf main.tex
+# Alternative: pdflatex main && bibtex main && pdflatex main && pdflatex main
+# Tectonic alternative (create the output directory first):
+mkdir -p /tmp/pace-paper-build
+tectonic --keep-logs --keep-intermediates --outdir /tmp/pace-paper-build main.tex
 ```
 
-This independent audit needs numpy, pandas and openpyxl. It writes aggregate
-`analysis/source_audit.json`, including source SHA-256, nesting checks, repository
-bootstrap confidence intervals and student fixed-effects regressions with separate
-motivation and psychological-safety predictors. It does not copy the raw workbook
-or export identifiers/replies. Original mixed-model results remain in `results.json`;
-the revised predictor table uses the new within-student regression results.
+Overleaf: upload this folder, select pdfLaTeX and `main.tex`. The checked-in
+`main.pdf` and `main.bbl` are rebuilt from the final source. Local validation uses
+Tectonic 0.17.0 with the supplied LNCS class and bibliography style. Other compilers
+should be checked for pagination independently. ICCIES specifies 12–15 pages.
 
-The original pipeline was rerun from the supplied workbook in an isolated temporary
-directory: all archived numeric values matched within absolute tolerance `1e-7`.
-All 86 Researching instances list both models under `researching.models_involved`;
-these are exported metadata, not an independent provider execution audit.
+## Files
 
-## Still to fill before submission (search for `TODO` or `AUTHOR ACTION` in main.tex)
-- ORCIDs (optional)
-- citation of the earlier PACE paper (if published)
-- voluntariness / grading / research consent / institutional review / data governance
-- exact question-generation API model ID/version and provider execution logs
-- same-input configuration example and expert audit if available
+- `main.tex`, `main.pdf`, `main.bbl`: revised article and compiled artifacts.
+- `refs.bib`: 36 references. Verification scope and evidence are in
+  `analysis/REFERENCE_AUDIT.md`; raw registry metadata are in
+  `analysis/reference_metadata_audit.json`.
+- `analysis/run_analysis.py`, `analysis/results.json`: original statistical
+  pipeline and aggregate results. Original student-based intervals and mixed
+  models are preserved for comparison; their row-level p-values are not used
+  as independent-observation inference in the revised article.
+- `analysis/check_export.py`, `analysis/source_audit.json`: independent source
+  audit, repository-bootstrap intervals, scoring sensitivity, and student fixed
+  effects with configuration adjustment.
+- `analysis/build_report.py`: regenerate revised tables, synchronise their marked
+  manuscript blocks, and rebuild the configuration plot using repository CIs.
+- `analysis/validate_revision.py`: independent OLS verification using explicit
+  student dummy variables, contrast checks, table synchronisation and strict JSON.
+- `figures/`: vector figures. The correlation heatmap is supplementary.
+- `REVIEW_ICCIES2027.md`, `REVISION_NOTES.md`: earlier review and revision history.
+
+## Reproduce locally with the private export
+
+The workbook contains student identifiers, emails, answers and repository data.
+It is not committed. Obtain it from the research team and use a local path.
+
+```bash
+python3 -m pip install numpy pandas openpyxl scipy statsmodels matplotlib
+python3 analysis/run_analysis.py "/path/to/PACE-BaiDaNop-DaDanhGiaAI-2026-10-29 (5).xlsx"
+python3 analysis/check_export.py "/path/to/PACE-BaiDaNop-DaDanhGiaAI-2026-10-29 (5).xlsx"
+python3 analysis/build_report.py
+python3 analysis/validate_revision.py "/path/to/PACE-BaiDaNop-DaDanhGiaAI-2026-10-29 (5).xlsx"
+```
+
+Run `build_report.py` after both analyses: the original pipeline writes older
+student-bootstrap table/figure versions; the report step replaces them with the
+repository-bootstrap versions used in the revised manuscript. The original
+item and composite rank tests remain exploratory. The report step reads only
+aggregate JSON and exports no individual student text. Public results now
+contain reply counts only; raw replies are not regenerated into public JSON.
+Existing Git history has not been rewritten.
+
+All 344 records (86 students × four configurations) pass export screening. There
+are 28 repositories and 190 questions. Both students and questions are nested
+within repositories. One assigned Rubric output is a guardrail refusal; it stays
+in the assigned-label analysis and has a block-exclusion sensitivity check.
+The source SHA-256 and numerical environment are recorded in the source audit.
+The numerical reproduction check and independent validation are documented in
+`SELF_REVIEW.md`. Public replication from aggregate artifacts alone cannot replace
+access to the private workbook; an approved anonymised data release is pending.
+
+## Verify references
+
+```bash
+python3 analysis/verify_references.py
+```
+
+This requires network access. It resolves 33 exact DOIs; three non-DOI papers
+have manual proceedings/original-article evidence in `analysis/REFERENCE_AUDIT.md`.
+DOI resolution confirms bibliographic identity, not every empirical claim.
+
+## Before submission
+
+Authors must document research consent, voluntariness, grading relationships,
+institutional review/exemption and data governance. They must also verify the
+study deployment's immutable model versions, execution logs and randomisation
+implementation, and disclose any earlier PACE publication/overlap. Classroom
+use or two exported model names alone do not establish those facts.
+
+The official submission page also prohibits AI-generated text and contains a
+2026/2027 wording inconsistency. Authors must clarify its applicability before
+submitting text revised with AI assistance. See the linked evidence in the
+reference audit. No conference submission is performed by this branch.

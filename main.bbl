@@ -3,6 +3,11 @@
 \providecommand{\urlprefix}{URL }
 \providecommand{\doi}[1]{https://doi.org/#1}
 
+\bibitem{cameron2015cluster}
+Cameron, A.C., Miller, D.L.: A practitioner's guide to cluster-robust
+  inference. Journal of Human Resources  \textbf{50}(2),  317--372 (2015).
+  \doi{10.3368/jhr.50.2.317}
+
 \bibitem{carless2018feedback}
 Carless, D., Boud, D.: The development of student feedback literacy: Enabling
   uptake of feedback. Assessment \& Evaluation in Higher Education
@@ -40,7 +45,8 @@ Dietvorst, B.J., Simmons, J.P., Massey, C.: Algorithm aversion: People
 Du, Y., Li, S., Torralba, A., Tenenbaum, J.B., Mordatch, I.: Improving
   factuality and reasoning in language models through multiagent debate. In:
   Proceedings of the 41st International Conference on Machine Learning (ICML).
-  Proceedings of Machine Learning Research, vol.~235. PMLR (2024)
+  Proceedings of Machine Learning Research, vol.~235, pp. 11733--11763. PMLR
+  (2024), \url{https://proceedings.mlr.press/v235/du24e.html}
 
 \bibitem{er2025assessing}
 Er, E., Ak{\c{c}}ap{\i}nar, G., Bayaz{\i}t, A., Noroozi, O., Banihashem, S.K.:
@@ -91,6 +97,11 @@ Kasneci, E., Sessler, K., K{\"u}chemann, S., Bannert, M., Dementieva, D.,
   language models for education. Learning and Individual Differences
   \textbf{103},  102274 (2023). \doi{10.1016/j.lindif.2023.102274}
 
+\bibitem{keuning2019automated}
+Keuning, H., Jeuring, J., Heeren, B.: A systematic literature review of
+  automated feedback generation for programming exercises. ACM Transactions on
+  Computing Education  \textbf{19}(1),  3:1--3:43 (2019). \doi{10.1145/3231711}
+
 \bibitem{khosravi2022explainable}
 Khosravi, H., Buckingham~Shum, S., Chen, G., Conati, C., Tsai, Y.S., Kay, J.,
   Knight, S., Martinez-Maldonado, R., Sadiq, S., Ga{\v{s}}evi{\'c}, D.:
@@ -130,7 +141,8 @@ Lehtinen, T., Santos, A.L., Sorva, J.: Let's ask students about their programs,
 Liffiton, M., Sheese, B.E., Savelka, J., Denny, P.: {CodeHelp}: Using large
   language models with guardrails for scalable support in programming classes.
   In: Proceedings of the 23rd Koli Calling International Conference on
-  Computing Education Research. ACM (2023). \doi{10.1145/3631802.3631830}
+  Computing Education Research. pp. 1--11. ACM (2023).
+  \doi{10.1145/3631802.3631830}
 
 \bibitem{logg2019algorithm}
 Logg, J.M., Minson, J.A., Moore, D.A.: Algorithm appreciation: People prefer
@@ -142,7 +154,7 @@ Nazaretsky, T., Mejia-Domenzain, P., Swamy, V., Frej, J., K{\"a}ser, T.: {AI}
   or human? {Evaluating} student feedback perceptions in higher education. In:
   Technology Enhanced Learning for Inclusive and Equitable Quality Education
   (EC-TEL 2024). Lecture Notes in Computer Science, vol. 15159, pp. 284--298.
-  Springer, Cham (2024)
+  Springer, Cham (2024). \doi{10.1007/978-3-031-72315-5_20}
 
 \bibitem{parkes2013feedback}
 Parkes, J., Abercrombie, S., McCarty, T.: Feedback sandwiches affect
@@ -181,16 +193,16 @@ Winstone, N.E., Nash, R.A., Parker, M., Rowntree, J.: Supporting learners'
   (2017). \doi{10.1080/00461520.2016.1207538}
 
 \bibitem{zhang2024students}
-Zhang, Z., Dong, Z., Shi, Y., Matsuda, N., Price, T., Xu, D.: Students'
+Zhang, Z., Dong, Z., Shi, Y., Price, T., Matsuda, N., Xu, D.: Students'
   perceptions and preferences of generative artificial intelligence feedback
   for programming. In: Proceedings of the AAAI Conference on Artificial
-  Intelligence. vol.~38 (2024). \doi{10.1609/aaai.v38i21.30372}
+  Intelligence. vol.~38, pp. 23250--23258 (2024).
+  \doi{10.1609/aaai.v38i21.30372}
 
 \bibitem{zheng2023judging}
 Zheng, L., Chiang, W.L., Sheng, Y., Zhuang, S., Wu, Z., Zhuang, Y., Lin, Z.,
   Li, Z., Li, D., Xing, E.P., Zhang, H., Gonzalez, J.E., Stoica, I.: Judging
   {LLM}-as-a-judge with {MT-Bench} and {Chatbot Arena}. In: Advances in Neural
-  Information Processing Systems 36 (NeurIPS 2023), Datasets and Benchmarks
-  Track (2023)
+  Information Processing Systems. vol.~36, pp. 46595--46623 (2023)
 
 \end{thebibliography}

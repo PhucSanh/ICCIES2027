@@ -1,0 +1,3422 @@
+{
+  "checked_at_utc": "2026-10-29T16:27:23.483794+00:00",
+  "scope": "DOI identity and bibliographic metadata; claim support assessed manually in REFERENCE_AUDIT.md",
+  "entries": [
+    {
+      "key": "hattie2007power",
+      "local": {
+        "author": "Hattie, John and Timperley, Helen",
+        "title": "The Power of Feedback",
+        "journal": "Review of Educational Research",
+        "volume": "77",
+        "number": "1",
+        "pages": "81--112",
+        "year": "2007",
+        "doi": "10.3102/003465430298487"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.3102%2F003465430298487",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.3102/003465430298487",
+        "title": [
+          "The Power of Feedback"
+        ],
+        "author": [
+          {
+            "given": "John",
+            "family": "Hattie",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "University of Auckland"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Helen",
+            "family": "Timperley",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of Auckland"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Review of Educational Research"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2007,
+              3
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2007,
+              3,
+              1
+            ]
+          ]
+        },
+        "volume": "77",
+        "issue": "1",
+        "page": "81-112",
+        "article-number": null,
+        "URL": "https://doi.org/10.3102/003465430298487"
+      }
+    },
+    {
+      "key": "shute2008focus",
+      "local": {
+        "author": "Shute, Valerie J.",
+        "title": "Focus on Formative Feedback",
+        "journal": "Review of Educational Research",
+        "volume": "78",
+        "number": "1",
+        "pages": "153--189",
+        "year": "2008",
+        "doi": "10.3102/0034654307313795"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.3102%2F0034654307313795",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.3102/0034654307313795",
+        "title": [
+          "Focus on Formative Feedback"
+        ],
+        "author": [
+          {
+            "given": "Valerie J.",
+            "family": "Shute",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Florida State University"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Review of Educational Research"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2008,
+              3
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2008,
+              3,
+              1
+            ]
+          ]
+        },
+        "volume": "78",
+        "issue": "1",
+        "page": "153-189",
+        "article-number": null,
+        "URL": "https://doi.org/10.3102/0034654307313795"
+      }
+    },
+    {
+      "key": "carless2018feedback",
+      "local": {
+        "author": "Carless, David and Boud, David",
+        "title": "The Development of Student Feedback Literacy: Enabling Uptake of Feedback",
+        "journal": "Assessment \\& Evaluation in Higher Education",
+        "volume": "43",
+        "number": "8",
+        "pages": "1315--1325",
+        "year": "2018",
+        "doi": "10.1080/02602938.2018.1463354"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.1080%2F02602938.2018.1463354",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.1080/02602938.2018.1463354",
+        "title": [
+          "The development of student feedback literacy: enabling uptake of feedback"
+        ],
+        "author": [
+          {
+            "given": "David",
+            "family": "Carless",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Faculty of Education, University of Hong Kong, Hong Kong, Hong Kong"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-6883-2722",
+            "authenticated-orcid": false,
+            "given": "David",
+            "family": "Boud",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Melbourne City Centre, Deakin University, Melbourne, Australia"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Assessment &amp; Evaluation in Higher Education"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2018,
+              11,
+              17
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2018,
+              5,
+              3
+            ]
+          ]
+        },
+        "volume": "43",
+        "issue": "8",
+        "page": "1315-1325",
+        "article-number": null,
+        "URL": "https://doi.org/10.1080/02602938.2018.1463354"
+      }
+    },
+    {
+      "key": "winstone2017supporting",
+      "local": {
+        "author": "Winstone, Naomi E. and Nash, Robert A. and Parker, Michael and Rowntree, James",
+        "title": "Supporting Learners' Agentic Engagement With Feedback: A Systematic Review and a Taxonomy of Recipience Processes",
+        "journal": "Educational Psychologist",
+        "volume": "52",
+        "number": "1",
+        "pages": "17--37",
+        "year": "2017",
+        "doi": "10.1080/00461520.2016.1207538"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.1080%2F00461520.2016.1207538",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.1080/00461520.2016.1207538",
+        "title": [
+          "Supporting Learners' Agentic Engagement With Feedback: A Systematic Review and a Taxonomy of Recipience Processes"
+        ],
+        "author": [
+          {
+            "given": "Naomi E.",
+            "family": "Winstone",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Robert A.",
+            "family": "Nash",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Michael",
+            "family": "Parker",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "James",
+            "family": "Rowntree",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Educational Psychologist"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2017,
+              1,
+              2
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2016,
+              9,
+              8
+            ]
+          ]
+        },
+        "volume": "52",
+        "issue": "1",
+        "page": "17-37",
+        "article-number": null,
+        "URL": "https://doi.org/10.1080/00461520.2016.1207538"
+      }
+    },
+    {
+      "key": "davis1989perceived",
+      "local": {
+        "author": "Davis, Fred D.",
+        "title": "Perceived Usefulness, Perceived Ease of Use, and User Acceptance of Information Technology",
+        "journal": "MIS Quarterly",
+        "volume": "13",
+        "number": "3",
+        "pages": "319--340",
+        "year": "1989",
+        "doi": "10.2307/249008"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.2307%2F249008",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.2307/249008",
+        "title": [
+          "Perceived Usefulness, Perceived Ease of Use, and User Acceptance of Information Technology"
+        ],
+        "author": [
+          {
+            "given": "Fred D.",
+            "family": "Davis",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Computer and Information Systems, Graduate School of Business Administration, University of Michigan, Ann Arbor, Michigan 48109"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "MIS Quarterly"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              1989,
+              9,
+              1
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              1989,
+              9,
+              1
+            ]
+          ]
+        },
+        "volume": "13",
+        "issue": "3",
+        "page": "319-340",
+        "article-number": null,
+        "URL": "https://doi.org/10.2307/249008"
+      }
+    },
+    {
+      "key": "venkatesh2003user",
+      "local": {
+        "author": "Venkatesh, Viswanath and Morris, Michael G. and Davis, Gordon B. and Davis, Fred D.",
+        "title": "User Acceptance of Information Technology: Toward a Unified View",
+        "journal": "MIS Quarterly",
+        "volume": "27",
+        "number": "3",
+        "pages": "425--478",
+        "year": "2003",
+        "doi": "10.2307/30036540"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.2307%2F30036540",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.2307/30036540",
+        "title": [
+          "User Acceptance of Information Technology: Toward A Unified View1"
+        ],
+        "author": [
+          {
+            "given": "Viswanath",
+            "family": "Venkatesh",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Robert H. Smith School of Business, University of Maryland, Van Munching Hall, College Park, MD 20742, U.S.A."
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Michael G.",
+            "family": "Morris",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "McIntire School of Commerce, University of Virginia, Monroe Hall, Charlottesville, VA 22903-2493, U.S.A."
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Gordon B.",
+            "family": "Davis",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Carlson School of Management, University of Minnesota, 321 19th Avenue South, Minneapolis, MN 55455, U.S.A."
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Fred D.",
+            "family": "Davis",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Sam M. Walton College of Business, University of Arkansas, Fayetteville, AR 72701-1201, U.S.A."
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "MIS Quarterly"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2003,
+              9,
+              1
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2003,
+              9,
+              1
+            ]
+          ]
+        },
+        "volume": "27",
+        "issue": "3",
+        "page": "425-478",
+        "article-number": null,
+        "URL": "https://doi.org/10.2307/30036540"
+      }
+    },
+    {
+      "key": "lee2004trust",
+      "local": {
+        "author": "Lee, John D. and See, Katrina A.",
+        "title": "Trust in Automation: Designing for Appropriate Reliance",
+        "journal": "Human Factors",
+        "volume": "46",
+        "number": "1",
+        "pages": "50--80",
+        "year": "2004",
+        "doi": "10.1518/hfes.46.1.50_30392"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.1518%2Fhfes.46.1.50_30392",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.1518/hfes.46.1.50_30392",
+        "title": [
+          "Trust in Automation: Designing for Appropriate Reliance"
+        ],
+        "author": [
+          {
+            "given": "J. D.",
+            "family": "Lee",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "K. A.",
+            "family": "See",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Human Factors: The Journal of the Human Factors and Ergonomics Society"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2004,
+              1,
+              1
+            ]
+          ]
+        },
+        "published-online": null,
+        "volume": "46",
+        "issue": "1",
+        "page": "50-80",
+        "article-number": null,
+        "URL": "https://doi.org/10.1518/hfes.46.1.50_30392"
+      }
+    },
+    {
+      "key": "dietvorst2015algorithm",
+      "local": {
+        "author": "Dietvorst, Berkeley J. and Simmons, Joseph P. and Massey, Cade",
+        "title": "Algorithm Aversion: People Erroneously Avoid Algorithms after Seeing Them Err",
+        "journal": "Journal of Experimental Psychology: General",
+        "volume": "144",
+        "number": "1",
+        "pages": "114--126",
+        "year": "2015",
+        "doi": "10.1037/xge0000033"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.1037%2Fxge0000033",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.1037/xge0000033",
+        "title": [
+          "Algorithm aversion: People erroneously avoid algorithms after seeing them err."
+        ],
+        "author": [
+          {
+            "given": "Berkeley J.",
+            "family": "Dietvorst",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Joseph P.",
+            "family": "Simmons",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Cade",
+            "family": "Massey",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Journal of Experimental Psychology: General"
+        ],
+        "published-print": null,
+        "published-online": {
+          "date-parts": [
+            [
+              2015
+            ]
+          ]
+        },
+        "volume": "144",
+        "issue": "1",
+        "page": "114-126",
+        "article-number": null,
+        "URL": "https://doi.org/10.1037/xge0000033"
+      }
+    },
+    {
+      "key": "logg2019algorithm",
+      "local": {
+        "author": "Logg, Jennifer M. and Minson, Julia A. and Moore, Don A.",
+        "title": "Algorithm Appreciation: People Prefer Algorithmic to Human Judgment",
+        "journal": "Organizational Behavior and Human Decision Processes",
+        "volume": "151",
+        "pages": "90--103",
+        "year": "2019",
+        "doi": "10.1016/j.obhdp.2018.12.005"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.1016%2Fj.obhdp.2018.12.005",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.1016/j.obhdp.2018.12.005",
+        "title": [
+          "Algorithm appreciation: People prefer algorithmic to human judgment"
+        ],
+        "author": [
+          {
+            "given": "Jennifer M.",
+            "family": "Logg",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Julia A.",
+            "family": "Minson",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Don A.",
+            "family": "Moore",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Organizational Behavior and Human Decision Processes"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2019,
+              3
+            ]
+          ]
+        },
+        "published-online": null,
+        "volume": "151",
+        "issue": null,
+        "page": "90-103",
+        "article-number": null,
+        "URL": "https://doi.org/10.1016/j.obhdp.2018.12.005"
+      }
+    },
+    {
+      "key": "kasneci2023chatgpt",
+      "local": {
+        "author": "Kasneci, Enkelejda and Sessler, Kathrin and K{\\\"u}chemann, Stefan and Bannert, Maria and Dementieva, Daryna and Fischer, Frank and Gasser, Urs and Groh, Georg and G{\\\"u}nnemann, Stephan and H{\\\"u}llermeier, Eyke and others",
+        "title": "{ChatGPT} for Good? {On} Opportunities and Challenges of Large Language Models for Education",
+        "journal": "Learning and Individual Differences",
+        "volume": "103",
+        "pages": "102274",
+        "year": "2023",
+        "doi": "10.1016/j.lindif.2023.102274"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.1016%2Fj.lindif.2023.102274",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.1016/j.lindif.2023.102274",
+        "title": [
+          "ChatGPT for good? On opportunities and challenges of large language models for education"
+        ],
+        "author": [
+          {
+            "given": "Enkelejda",
+            "family": "Kasneci",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Kathrin",
+            "family": "Sessler",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Stefan",
+            "family": "Küchemann",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Maria",
+            "family": "Bannert",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Daryna",
+            "family": "Dementieva",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Frank",
+            "family": "Fischer",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Urs",
+            "family": "Gasser",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Georg",
+            "family": "Groh",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Stephan",
+            "family": "Günnemann",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Eyke",
+            "family": "Hüllermeier",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Stephan",
+            "family": "Krusche",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Gitta",
+            "family": "Kutyniok",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Tilman",
+            "family": "Michaeli",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Claudia",
+            "family": "Nerdel",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Jürgen",
+            "family": "Pfeffer",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Oleksandra",
+            "family": "Poquet",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Michael",
+            "family": "Sailer",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Albrecht",
+            "family": "Schmidt",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Tina",
+            "family": "Seidel",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Matthias",
+            "family": "Stadler",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Jochen",
+            "family": "Weller",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Jochen",
+            "family": "Kuhn",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Gjergji",
+            "family": "Kasneci",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Learning and Individual Differences"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2023,
+              4
+            ]
+          ]
+        },
+        "published-online": null,
+        "volume": "103",
+        "issue": null,
+        "page": "102274",
+        "article-number": "102274",
+        "URL": "https://doi.org/10.1016/j.lindif.2023.102274"
+      }
+    },
+    {
+      "key": "denny2024computing",
+      "local": {
+        "author": "Denny, Paul and Prather, James and Becker, Brett A. and Finnie-Ansley, James and Hellas, Arto and Leinonen, Juho and Luxton-Reilly, Andrew and Reeves, Brent N. and Santos, Eddie Antonio and Sarsa, Sami",
+        "title": "Computing Education in the Era of Generative {AI}",
+        "journal": "Communications of the ACM",
+        "volume": "67",
+        "number": "2",
+        "pages": "56--67",
+        "year": "2024",
+        "doi": "10.1145/3624720"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.1145%2F3624720",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.1145/3624720",
+        "title": [
+          "Computing Education in the Era of Generative AI"
+        ],
+        "author": [
+          {
+            "given": "Paul",
+            "family": "Denny",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "University of Auckland, Auckland, New Zealand"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "James",
+            "family": "Prather",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Abilene Christian University, Abilene, TX, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Brett A.",
+            "family": "Becker",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University College Dublin, Dublin, Ireland"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "James",
+            "family": "Finnie-Ansley",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of Auckland, Auckland, New Zealand"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Arto",
+            "family": "Hellas",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Aalto University, Espoo, Finland"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Juho",
+            "family": "Leinonen",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of Auckland, Auckland, New Zealand"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Andrew",
+            "family": "Luxton-Reilly",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of Auckland, Auckland, New Zealand"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Brent N.",
+            "family": "Reeves",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Abilene Christian University, Abilene, TX, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Eddie Antonio",
+            "family": "Santos",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University College Dublin, Dublin, Ireland"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Sami",
+            "family": "Sarsa",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Aalto University, Espoo, Finland"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Communications of the ACM"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2024,
+              2
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2024,
+              1,
+              25
+            ]
+          ]
+        },
+        "volume": "67",
+        "issue": "2",
+        "page": "56-67",
+        "article-number": null,
+        "URL": "https://doi.org/10.1145/3624720"
+      }
+    },
+    {
+      "key": "hellas2023exploring",
+      "local": {
+        "author": "Hellas, Arto and Leinonen, Juho and Sarsa, Sami and Koutcheme, Charles and Kujanp{\\\"a}{\\\"a}, Lilja and Sorva, Juha",
+        "title": "Exploring the Responses of Large Language Models to Beginner Programmers' Help Requests",
+        "booktitle": "Proceedings of the 2023 ACM Conference on International Computing Education Research (ICER 2023), Volume 1",
+        "pages": "93--105",
+        "publisher": "ACM",
+        "year": "2023",
+        "doi": "10.1145/3568813.3600139"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.1145%2F3568813.3600139",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.1145/3568813.3600139",
+        "title": [
+          "Exploring the Responses of Large Language Models to Beginner Programmers’ Help Requests"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-6502-209X",
+            "authenticated-orcid": false,
+            "given": "Arto",
+            "family": "Hellas",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Aalto University, Finland"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-6829-9449",
+            "authenticated-orcid": false,
+            "given": "Juho",
+            "family": "Leinonen",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "The University of Auckland, New Zealand"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-7277-9282",
+            "authenticated-orcid": false,
+            "given": "Sami",
+            "family": "Sarsa",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Aalto University, Finland"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-2272-2763",
+            "authenticated-orcid": false,
+            "given": "Charles",
+            "family": "Koutcheme",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Aalto University, Finland"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0009-0002-0205-7003",
+            "authenticated-orcid": false,
+            "given": "Lilja",
+            "family": "Kujanpää",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Aalto University, Finland"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0009-0003-1727-1317",
+            "authenticated-orcid": false,
+            "given": "Juha",
+            "family": "Sorva",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Aalto University, Finland"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Proceedings of the 2023 ACM Conference on International Computing Education Research V.1"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2023,
+              8,
+              7
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2023,
+              9,
+              10
+            ]
+          ]
+        },
+        "volume": null,
+        "issue": null,
+        "page": "93-105",
+        "article-number": null,
+        "URL": "https://doi.org/10.1145/3568813.3600139"
+      }
+    },
+    {
+      "key": "kiesler2023exploring",
+      "local": {
+        "author": "Kiesler, Natalie and Lohr, Dominic and Keuning, Hieke",
+        "title": "Exploring the Potential of Large Language Models to Generate Formative Programming Feedback",
+        "booktitle": "2023 IEEE Frontiers in Education Conference (FIE)",
+        "pages": "1--5",
+        "publisher": "IEEE",
+        "year": "2023",
+        "doi": "10.1109/FIE58773.2023.10343457"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.1109%2FFIE58773.2023.10343457",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.1109/fie58773.2023.10343457",
+        "title": [
+          "Exploring the Potential of Large Language Models to Generate Formative Programming Feedback"
+        ],
+        "author": [
+          {
+            "given": "Natalie",
+            "family": "Kiesler",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "DIPF Leibniz Institute for Research and Information in Education,Information Center Education,Frankfurt am Main,Germany"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Dominic",
+            "family": "Lohr",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Friedrich-Alexander-University,Computer Science Education,Erlangen,Germany"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Hieke",
+            "family": "Keuning",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Utrecht University,Information and Computing Sciences,Utrecht,The Netherlands"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "2023 IEEE Frontiers in Education Conference (FIE)"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2023,
+              10,
+              18
+            ]
+          ]
+        },
+        "published-online": null,
+        "volume": null,
+        "issue": null,
+        "page": "1-5",
+        "article-number": null,
+        "URL": "https://doi.org/10.1109/fie58773.2023.10343457"
+      }
+    },
+    {
+      "key": "liffiton2023codehelp",
+      "local": {
+        "author": "Liffiton, Mark and Sheese, Brad E. and Savelka, Jaromir and Denny, Paul",
+        "title": "{CodeHelp}: Using Large Language Models with Guardrails for Scalable Support in Programming Classes",
+        "booktitle": "Proceedings of the 23rd Koli Calling International Conference on Computing Education Research",
+        "pages": "1--11",
+        "publisher": "ACM",
+        "year": "2023",
+        "doi": "10.1145/3631802.3631830"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.1145%2F3631802.3631830",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.1145/3631802.3631830",
+        "title": [
+          "CodeHelp: Using Large Language Models with Guardrails for Scalable Support in Programming Classes"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0004-1512-7829",
+            "authenticated-orcid": false,
+            "given": "Mark",
+            "family": "Liffiton",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Computer Science, Illinois Wesleyan University, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-8762-5622",
+            "authenticated-orcid": false,
+            "given": "Brad E",
+            "family": "Sheese",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Computer Science, Illinois Wesleyan University, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-3674-5456",
+            "authenticated-orcid": false,
+            "given": "Jaromir",
+            "family": "Savelka",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Carnegie Mellon University, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-5150-9806",
+            "authenticated-orcid": false,
+            "given": "Paul",
+            "family": "Denny",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Computer Science, The University of Auckland, New Zealand"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Proceedings of the 23rd Koli Calling International Conference on Computing Education Research"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2023,
+              11,
+              13
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2024,
+              2,
+              6
+            ]
+          ]
+        },
+        "volume": null,
+        "issue": null,
+        "page": "1-11",
+        "article-number": null,
+        "URL": "https://doi.org/10.1145/3631802.3631830"
+      }
+    },
+    {
+      "key": "dai2023can",
+      "local": {
+        "author": "Dai, Wei and Lin, Jionghao and Jin, Hua and Li, Tongguang and Tsai, Yi-Shan and Ga{\\v{s}}evi{\\'c}, Dragan and Chen, Guanliang",
+        "title": "Can Large Language Models Provide Feedback to Students? {A} Case Study on {ChatGPT}",
+        "booktitle": "2023 IEEE International Conference on Advanced Learning Technologies (ICALT)",
+        "pages": "323--325",
+        "publisher": "IEEE",
+        "year": "2023",
+        "doi": "10.1109/ICALT58122.2023.00100"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.1109%2FICALT58122.2023.00100",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.1109/icalt58122.2023.00100",
+        "title": [
+          "Can Large Language Models Provide Feedback to Students? A Case Study on ChatGPT"
+        ],
+        "author": [
+          {
+            "given": "Wei",
+            "family": "Dai",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Centre for Learning Analytics at Monash, Monash University,Melbourne,Australia"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Jionghao",
+            "family": "Lin",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Centre for Learning Analytics at Monash, Monash University,Melbourne,Australia"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Hua",
+            "family": "Jin",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Centre for Learning Analytics at Monash, Monash University,Melbourne,Australia"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Tongguang",
+            "family": "Li",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Centre for Learning Analytics at Monash, Monash University,Melbourne,Australia"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Yi-Shan",
+            "family": "Tsai",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Centre for Learning Analytics at Monash, Monash University,Melbourne,Australia"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Dragan",
+            "family": "Gašević",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Centre for Learning Analytics at Monash, Monash University,Melbourne,Australia"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Guanliang",
+            "family": "Chen",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Centre for Learning Analytics at Monash, Monash University,Melbourne,Australia"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "2023 IEEE International Conference on Advanced Learning Technologies (ICALT)"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2023,
+              7
+            ]
+          ]
+        },
+        "published-online": null,
+        "volume": null,
+        "issue": null,
+        "page": "323-325",
+        "article-number": null,
+        "URL": "https://doi.org/10.1109/icalt58122.2023.00100"
+      }
+    },
+    {
+      "key": "zhang2024students",
+      "local": {
+        "author": "Zhang, Zhengdong and Dong, Zihan and Shi, Yang and Price, Thomas and Matsuda, Noboru and Xu, Dongkuan",
+        "title": "Students' Perceptions and Preferences of Generative Artificial Intelligence Feedback for Programming",
+        "booktitle": "Proceedings of the AAAI Conference on Artificial Intelligence",
+        "volume": "38",
+        "pages": "23250--23258",
+        "year": "2024",
+        "doi": "10.1609/aaai.v38i21.30372"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.1609%2Faaai.v38i21.30372",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.1609/aaai.v38i21.30372",
+        "title": [
+          "Students’ Perceptions and Preferences of Generative Artificial Intelligence Feedback for Programming"
+        ],
+        "author": [
+          {
+            "given": "Zhengdong",
+            "family": "Zhang",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Zihan",
+            "family": "Dong",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Yang",
+            "family": "Shi",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Thomas",
+            "family": "Price",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Noboru",
+            "family": "Matsuda",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Dongkuan",
+            "family": "Xu",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Proceedings of the AAAI Conference on Artificial Intelligence"
+        ],
+        "published-print": null,
+        "published-online": {
+          "date-parts": [
+            [
+              2024,
+              3,
+              24
+            ]
+          ]
+        },
+        "volume": "38",
+        "issue": "21",
+        "page": "23250-23258",
+        "article-number": null,
+        "URL": "https://doi.org/10.1609/aaai.v38i21.30372"
+      }
+    },
+    {
+      "key": "er2025assessing",
+      "local": {
+        "author": "Er, Erkan and Ak{\\c{c}}ap{\\i}nar, G{\\\"o}khan and Bayaz{\\i}t, Alper and Noroozi, Omid and Banihashem, Seyyed Kazem",
+        "title": "Assessing Student Perceptions and Use of Instructor versus {AI}-Generated Feedback",
+        "journal": "British Journal of Educational Technology",
+        "volume": "56",
+        "number": "3",
+        "pages": "1074--1091",
+        "year": "2025",
+        "doi": "10.1111/bjet.13558"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.1111%2Fbjet.13558",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.1111/bjet.13558",
+        "title": [
+          "Assessing student perceptions and use of instructor versus\n                    <scp>AI</scp>\n                    ‐generated feedback"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-9624-4055",
+            "authenticated-orcid": false,
+            "given": "Erkan",
+            "family": "Er",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Computer Education and Instructional Technology Middle East Technical University  Ankara Turkey"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-0742-1612",
+            "authenticated-orcid": false,
+            "given": "Gökhan",
+            "family": "Akçapınar",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Computer Education and Instructional Technology Hacettepe University  Ankara Turkey"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-6860-4404",
+            "authenticated-orcid": false,
+            "given": "Alper",
+            "family": "Bayazıt",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Medical Education and Informatics Ankara University  Ankara Turkey"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-0622-289X",
+            "authenticated-orcid": false,
+            "given": "Omid",
+            "family": "Noroozi",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Omid Noroozi: Education and Learning Science Group Wageningen University and Research  Wageningen The Netherlands"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-9978-3783",
+            "authenticated-orcid": false,
+            "given": "Seyyed Kazem",
+            "family": "Banihashem",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Omid Noroozi: Education and Learning Science Group Wageningen University and Research  Wageningen The Netherlands"
+              },
+              {
+                "name": "Seyyed Kazem Banihashem: Online Learning and Instruction Open Universiteit  Heerlen The Netherlands"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "British Journal of Educational Technology"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2025,
+              5
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              27
+            ]
+          ]
+        },
+        "volume": "56",
+        "issue": "3",
+        "page": "1074-1091",
+        "article-number": null,
+        "URL": "https://doi.org/10.1111/bjet.13558"
+      }
+    },
+    {
+      "key": "nazaretsky2024ai",
+      "local": {
+        "author": "Nazaretsky, Tanya and Mejia-Domenzain, Paola and Swamy, Vinitra and Frej, Jibril and K{\\\"a}ser, Tanja",
+        "title": "{AI} or Human? {Evaluating} Student Feedback Perceptions in Higher Education",
+        "booktitle": "Technology Enhanced Learning for Inclusive and Equitable Quality Education (EC-TEL 2024)",
+        "series": "Lecture Notes in Computer Science",
+        "volume": "15159",
+        "pages": "284--298",
+        "publisher": "Springer, Cham",
+        "year": "2024",
+        "doi": "10.1007/978-3-031-72315-5_20"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.1007%2F978-3-031-72315-5_20",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.1007/978-3-031-72315-5_20",
+        "title": [
+          "AI or Human? Evaluating Student Feedback Perceptions in Higher Education"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-1343-0627",
+            "authenticated-orcid": false,
+            "given": "Tanya",
+            "family": "Nazaretsky",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-1242-3134",
+            "authenticated-orcid": false,
+            "given": "Paola",
+            "family": "Mejia-Domenzain",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-6840-5923",
+            "authenticated-orcid": false,
+            "given": "Vinitra",
+            "family": "Swamy",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0009-0009-0631-0636",
+            "authenticated-orcid": false,
+            "given": "Jibril",
+            "family": "Frej",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-0672-0415",
+            "authenticated-orcid": false,
+            "given": "Tanja",
+            "family": "Käser",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Lecture Notes in Computer Science",
+          "Technology Enhanced Learning for Inclusive and Equitable Quality Education"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2024,
+              9,
+              13
+            ]
+          ]
+        },
+        "volume": null,
+        "issue": null,
+        "page": "284-298",
+        "article-number": null,
+        "URL": "https://doi.org/10.1007/978-3-031-72315-5_20"
+      }
+    },
+    {
+      "key": "escalante2023ai",
+      "local": {
+        "author": "Escalante, Juan and Pack, Austin and Barrett, Alex",
+        "title": "{AI}-Generated Feedback on Writing: Insights into Efficacy and {ENL} Student Preference",
+        "journal": "International Journal of Educational Technology in Higher Education",
+        "volume": "20",
+        "pages": "57",
+        "year": "2023",
+        "doi": "10.1186/s41239-023-00425-2"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.1186%2Fs41239-023-00425-2",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.1186/s41239-023-00425-2",
+        "title": [
+          "AI-generated feedback on writing: insights into efficacy and ENL student preference"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0009-8534-2504",
+            "authenticated-orcid": false,
+            "given": "Juan",
+            "family": "Escalante",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Austin",
+            "family": "Pack",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Alex",
+            "family": "Barrett",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "International Journal of Educational Technology in Higher Education"
+        ],
+        "published-print": null,
+        "published-online": {
+          "date-parts": [
+            [
+              2023,
+              10,
+              27
+            ]
+          ]
+        },
+        "volume": "20",
+        "issue": "1",
+        "page": null,
+        "article-number": "57",
+        "URL": "https://doi.org/10.1186/s41239-023-00425-2"
+      }
+    },
+    {
+      "key": "lehtinen2021lets",
+      "local": {
+        "author": "Lehtinen, Teemu and Santos, Andr{\\'e} L. and Sorva, Juha",
+        "title": "Let's Ask Students About Their Programs, Automatically",
+        "booktitle": "2021 IEEE/ACM 29th International Conference on Program Comprehension (ICPC)",
+        "pages": "467--475",
+        "publisher": "IEEE",
+        "year": "2021",
+        "doi": "10.1109/ICPC52881.2021.00054"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.1109%2FICPC52881.2021.00054",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.1109/icpc52881.2021.00054",
+        "title": [
+          "Let’s Ask Students About Their Programs, Automatically"
+        ],
+        "author": [
+          {
+            "given": "Teemu",
+            "family": "Lehtinen",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Andre L.",
+            "family": "Santos",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Juha",
+            "family": "Sorva",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "2021 IEEE/ACM 29th International Conference on Program Comprehension (ICPC)"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2021,
+              5
+            ]
+          ]
+        },
+        "published-online": null,
+        "volume": null,
+        "issue": null,
+        "page": "467-475",
+        "article-number": null,
+        "URL": "https://doi.org/10.1109/icpc52881.2021.00054"
+      }
+    },
+    {
+      "key": "parkes2013feedback",
+      "local": {
+        "author": "Parkes, Jay and Abercrombie, Sara and McCarty, Teresita",
+        "title": "Feedback Sandwiches Affect Perceptions but Not Performance",
+        "journal": "Advances in Health Sciences Education",
+        "volume": "18",
+        "number": "3",
+        "pages": "397--407",
+        "year": "2013",
+        "doi": "10.1007/s10459-012-9377-9"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.1007%2Fs10459-012-9377-9",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.1007/s10459-012-9377-9",
+        "title": [
+          "Feedback sandwiches affect perceptions but not performance"
+        ],
+        "author": [
+          {
+            "given": "Jay",
+            "family": "Parkes",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Sara",
+            "family": "Abercrombie",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Teresita",
+            "family": "McCarty",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Advances in Health Sciences Education"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2013,
+              8
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2012,
+              5,
+              12
+            ]
+          ]
+        },
+        "volume": "18",
+        "issue": "3",
+        "page": "397-407",
+        "article-number": null,
+        "URL": "https://doi.org/10.1007/s10459-012-9377-9"
+      }
+    },
+    {
+      "key": "jonsson2007use",
+      "local": {
+        "author": "Jonsson, Anders and Svingby, Gunilla",
+        "title": "The Use of Scoring Rubrics: Reliability, Validity and Educational Consequences",
+        "journal": "Educational Research Review",
+        "volume": "2",
+        "number": "2",
+        "pages": "130--144",
+        "year": "2007",
+        "doi": "10.1016/j.edurev.2007.05.002"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.1016%2Fj.edurev.2007.05.002",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.1016/j.edurev.2007.05.002",
+        "title": [
+          "The use of scoring rubrics: Reliability, validity and educational consequences"
+        ],
+        "author": [
+          {
+            "given": "Anders",
+            "family": "Jonsson",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Gunilla",
+            "family": "Svingby",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Educational Research Review"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2007,
+              1
+            ]
+          ]
+        },
+        "published-online": null,
+        "volume": "2",
+        "issue": "2",
+        "page": "130-144",
+        "article-number": null,
+        "URL": "https://doi.org/10.1016/j.edurev.2007.05.002"
+      }
+    },
+    {
+      "key": "khosravi2022explainable",
+      "local": {
+        "author": "Khosravi, Hassan and Buckingham Shum, Simon and Chen, Guanliang and Conati, Cristina and Tsai, Yi-Shan and Kay, Judy and Knight, Simon and Martinez-Maldonado, Roberto and Sadiq, Shazia and Ga{\\v{s}}evi{\\'c}, Dragan",
+        "title": "Explainable Artificial Intelligence in Education",
+        "journal": "Computers and Education: Artificial Intelligence",
+        "volume": "3",
+        "pages": "100074",
+        "year": "2022",
+        "doi": "10.1016/j.caeai.2022.100074"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.1016%2Fj.caeai.2022.100074",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.1016/j.caeai.2022.100074",
+        "title": [
+          "Explainable Artificial Intelligence in education"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-8664-6117",
+            "authenticated-orcid": false,
+            "given": "Hassan",
+            "family": "Khosravi",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-6334-7429",
+            "authenticated-orcid": false,
+            "given": "Simon Buckingham",
+            "family": "Shum",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Guanliang",
+            "family": "Chen",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Cristina",
+            "family": "Conati",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Yi-Shan",
+            "family": "Tsai",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Judy",
+            "family": "Kay",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-8709-5780",
+            "authenticated-orcid": false,
+            "given": "Simon",
+            "family": "Knight",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Roberto",
+            "family": "Martinez-Maldonado",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Shazia",
+            "family": "Sadiq",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Dragan",
+            "family": "Gašević",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Computers and Education: Artificial Intelligence"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2022
+            ]
+          ]
+        },
+        "published-online": null,
+        "volume": "3",
+        "issue": null,
+        "page": "100074",
+        "article-number": "100074",
+        "URL": "https://doi.org/10.1016/j.caeai.2022.100074"
+      }
+    },
+    {
+      "key": "du2024improving",
+      "local": {
+        "author": "Du, Yilun and Li, Shuang and Torralba, Antonio and Tenenbaum, Joshua B. and Mordatch, Igor",
+        "title": "Improving Factuality and Reasoning in Language Models through Multiagent Debate",
+        "booktitle": "Proceedings of the 41st International Conference on Machine Learning (ICML)",
+        "series": "Proceedings of Machine Learning Research",
+        "volume": "235",
+        "pages": "11733--11763",
+        "publisher": "PMLR",
+        "year": "2024",
+        "url": "https://proceedings.mlr.press/v235/du24e.html"
+      },
+      "status": "manual_proceedings_check",
+      "evidence": "REFERENCE_AUDIT.md"
+    },
+    {
+      "key": "zheng2023judging",
+      "local": {
+        "author": "Zheng, Lianmin and Chiang, Wei-Lin and Sheng, Ying and Zhuang, Siyuan and Wu, Zhanghao and Zhuang, Yonghao and Lin, Zi and Li, Zhuohan and Li, Dacheng and Xing, Eric P. and Zhang, Hao and Gonzalez, Joseph E. and Stoica, Ion",
+        "title": "Judging {LLM}-as-a-Judge with {MT-Bench} and {Chatbot Arena}",
+        "booktitle": "Advances in Neural Information Processing Systems",
+        "volume": "36",
+        "pages": "46595--46623",
+        "year": "2023"
+      },
+      "status": "manual_proceedings_check",
+      "evidence": "REFERENCE_AUDIT.md"
+    },
+    {
+      "key": "kim2019straightlining",
+      "local": {
+        "author": "Kim, Yujin and Dykema, Jennifer and Stevenson, John and Black, Penny and Moberg, D. Paul",
+        "title": "Straightlining: Overview of Measurement, Comparison of Indicators, and Effects in Mail--Web Mixed-Mode Surveys",
+        "journal": "Social Science Computer Review",
+        "volume": "37",
+        "number": "2",
+        "pages": "214--233",
+        "year": "2019",
+        "doi": "10.1177/0894439317752406"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.1177%2F0894439317752406",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.1177/0894439317752406",
+        "title": [
+          "Straightlining: Overview of Measurement, Comparison of Indicators, and Effects in Mail–Web Mixed-Mode Surveys"
+        ],
+        "author": [
+          {
+            "given": "Yujin",
+            "family": "Kim",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "University of Wisconsin Survey Center, University of Wisconsin–Madison, Madison, WI, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Jennifer",
+            "family": "Dykema",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of Wisconsin Survey Center, University of Wisconsin–Madison, Madison, WI, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "John",
+            "family": "Stevenson",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of Wisconsin Survey Center, University of Wisconsin–Madison, Madison, WI, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Penny",
+            "family": "Black",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Office of Rural Health, University of Wisconsin–Madison, Madison, WI, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "D. Paul",
+            "family": "Moberg",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of Wisconsin Population Health Institute, University of Wisconsin–Madison, Madison, WI, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Social Science Computer Review"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2019,
+              4
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2018,
+              2,
+              20
+            ]
+          ]
+        },
+        "volume": "37",
+        "issue": "2",
+        "page": "214-233",
+        "article-number": null,
+        "URL": "https://doi.org/10.1177/0894439317752406"
+      }
+    },
+    {
+      "key": "vansonderen2013ineffectiveness",
+      "local": {
+        "author": "van Sonderen, Eric and Sanderman, Robbert and Coyne, James C.",
+        "title": "Ineffectiveness of Reverse Wording of Questionnaire Items: Let's Learn from Cows in the Rain",
+        "journal": "PLoS ONE",
+        "volume": "8",
+        "number": "7",
+        "pages": "e68967",
+        "year": "2013",
+        "doi": "10.1371/journal.pone.0068967"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.1371%2Fjournal.pone.0068967",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.1371/journal.pone.0068967",
+        "title": [
+          "Ineffectiveness of Reverse Wording of Questionnaire Items: Let’s Learn from Cows in the Rain"
+        ],
+        "author": [
+          {
+            "given": "Eric van",
+            "family": "Sonderen",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Robbert",
+            "family": "Sanderman",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "James C.",
+            "family": "Coyne",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "PLoS ONE"
+        ],
+        "published-print": null,
+        "published-online": {
+          "date-parts": [
+            [
+              2013,
+              7,
+              31
+            ]
+          ]
+        },
+        "volume": "8",
+        "issue": "7",
+        "page": "e68967",
+        "article-number": null,
+        "URL": "https://doi.org/10.1371/journal.pone.0068967"
+      }
+    },
+    {
+      "key": "podsakoff2003common",
+      "local": {
+        "author": "Podsakoff, Philip M. and MacKenzie, Scott B. and Lee, Jeong-Yeon and Podsakoff, Nathan P.",
+        "title": "Common Method Biases in Behavioral Research: A Critical Review of the Literature and Recommended Remedies",
+        "journal": "Journal of Applied Psychology",
+        "volume": "88",
+        "number": "5",
+        "pages": "879--903",
+        "year": "2003",
+        "doi": "10.1037/0021-9010.88.5.879"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.1037%2F0021-9010.88.5.879",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.1037/0021-9010.88.5.879",
+        "title": [
+          "Common method biases in behavioral research: A critical review of the literature and recommended remedies."
+        ],
+        "author": [
+          {
+            "given": "Philip M.",
+            "family": "Podsakoff",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Scott B.",
+            "family": "MacKenzie",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-2622-7831",
+            "authenticated-orcid": false,
+            "given": "Jeong-Yeon",
+            "family": "Lee",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Nathan P.",
+            "family": "Podsakoff",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Journal of Applied Psychology"
+        ],
+        "published-print": null,
+        "published-online": {
+          "date-parts": [
+            [
+              2003
+            ]
+          ]
+        },
+        "volume": "88",
+        "issue": "5",
+        "page": "879-903",
+        "article-number": null,
+        "URL": "https://doi.org/10.1037/0021-9010.88.5.879"
+      }
+    },
+    {
+      "key": "friedman1937use",
+      "local": {
+        "author": "Friedman, Milton",
+        "title": "The Use of Ranks to Avoid the Assumption of Normality Implicit in the Analysis of Variance",
+        "journal": "Journal of the American Statistical Association",
+        "volume": "32",
+        "number": "200",
+        "pages": "675--701",
+        "year": "1937",
+        "doi": "10.1080/01621459.1937.10503522"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.1080%2F01621459.1937.10503522",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.1080/01621459.1937.10503522",
+        "title": [
+          "The Use of Ranks to Avoid the Assumption of Normality Implicit in the Analysis of Variance"
+        ],
+        "author": [
+          {
+            "given": "Milton",
+            "family": "Friedman",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Journal of the American Statistical Association"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              1937,
+              12
+            ]
+          ]
+        },
+        "published-online": null,
+        "volume": "32",
+        "issue": "200",
+        "page": "675-701",
+        "article-number": null,
+        "URL": "https://doi.org/10.1080/01621459.1937.10503522"
+      }
+    },
+    {
+      "key": "holm1979simple",
+      "local": {
+        "author": "Holm, Sture",
+        "title": "A Simple Sequentially Rejective Multiple Test Procedure",
+        "journal": "Scandinavian Journal of Statistics",
+        "volume": "6",
+        "number": "2",
+        "pages": "65--70",
+        "year": "1979"
+      },
+      "status": "manual_proceedings_check",
+      "evidence": "REFERENCE_AUDIT.md"
+    },
+    {
+      "key": "cronbach1951coefficient",
+      "local": {
+        "author": "Cronbach, Lee J.",
+        "title": "Coefficient Alpha and the Internal Structure of Tests",
+        "journal": "Psychometrika",
+        "volume": "16",
+        "number": "3",
+        "pages": "297--334",
+        "year": "1951",
+        "doi": "10.1007/BF02310555"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.1007%2FBF02310555",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.1007/bf02310555",
+        "title": [
+          "Coefficient Alpha and the Internal Structure of Tests"
+        ],
+        "author": [
+          {
+            "given": "Lee J.",
+            "family": "Cronbach",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Psychometrika"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              1951,
+              9
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2025,
+              1,
+              1
+            ]
+          ]
+        },
+        "volume": "16",
+        "issue": "3",
+        "page": "297-334",
+        "article-number": null,
+        "URL": "https://doi.org/10.1007/bf02310555"
+      }
+    },
+    {
+      "key": "hayes2020use",
+      "local": {
+        "author": "Hayes, Andrew F. and Coutts, Jacob J.",
+        "title": "Use Omega Rather than {Cronbach's} Alpha for Estimating Reliability. {But}\\ldots",
+        "journal": "Communication Methods and Measures",
+        "volume": "14",
+        "number": "1",
+        "pages": "1--24",
+        "year": "2020",
+        "doi": "10.1080/19312458.2020.1718629"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.1080%2F19312458.2020.1718629",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.1080/19312458.2020.1718629",
+        "title": [
+          "Use Omega Rather than Cronbach’s Alpha for Estimating Reliability. But…"
+        ],
+        "author": [
+          {
+            "given": "Andrew F.",
+            "family": "Hayes",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Psychology and School of Communication, Ohio State University, Columbus, Ohio, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Jacob J.",
+            "family": "Coutts",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Psychology, Ohio State University, Columbus, Ohio, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Communication Methods and Measures"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2020,
+              1,
+              2
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2020,
+              2,
+              11
+            ]
+          ]
+        },
+        "volume": "14",
+        "issue": "1",
+        "page": "1-24",
+        "article-number": null,
+        "URL": "https://doi.org/10.1080/19312458.2020.1718629"
+      }
+    },
+    {
+      "key": "lakens2017equivalence",
+      "local": {
+        "author": "Lakens, Dani{\\\"e}l",
+        "title": "Equivalence Tests: A Practical Primer for $t$ Tests, Correlations, and Meta-Analyses",
+        "journal": "Social Psychological and Personality Science",
+        "volume": "8",
+        "number": "4",
+        "pages": "355--362",
+        "year": "2017",
+        "doi": "10.1177/1948550617697177"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.1177%2F1948550617697177",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.1177/1948550617697177",
+        "title": [
+          "Equivalence Tests"
+        ],
+        "author": [
+          {
+            "given": "Daniël",
+            "family": "Lakens",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Human Technology Interaction Group, Eindhoven University of Technology, Eindhoven, the Netherlands"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Social Psychological and Personality Science"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2017,
+              5
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2017,
+              5,
+              5
+            ]
+          ]
+        },
+        "volume": "8",
+        "issue": "4",
+        "page": "355-362",
+        "article-number": null,
+        "URL": "https://doi.org/10.1177/1948550617697177"
+      }
+    },
+    {
+      "key": "seabold2010statsmodels",
+      "local": {
+        "author": "Seabold, Skipper and Perktold, Josef",
+        "title": "Statsmodels: Econometric and Statistical Modeling with {Python}",
+        "booktitle": "Proceedings of the 9th Python in Science Conference (SciPy 2010)",
+        "pages": "92--96",
+        "year": "2010",
+        "doi": "10.25080/Majora-92bf1922-011"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.25080%2FMajora-92bf1922-011",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.25080/majora-92bf1922-011",
+        "title": [
+          "Statsmodels: Econometric and Statistical Modeling with Python"
+        ],
+        "author": [
+          {
+            "given": "Skipper",
+            "family": "Seabold",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Josef",
+            "family": "Perktold",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Proceedings of the Python in Science Conference",
+          "Proceedings of the 9th Python in Science Conference"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2010
+            ]
+          ]
+        },
+        "published-online": null,
+        "volume": null,
+        "issue": null,
+        "page": "92-96",
+        "article-number": null,
+        "URL": "https://doi.org/10.25080/majora-92bf1922-011"
+      }
+    },
+    {
+      "key": "keuning2019automated",
+      "local": {
+        "author": "Keuning, Hieke and Jeuring, Johan and Heeren, Bastiaan",
+        "title": "A Systematic Literature Review of Automated Feedback Generation for Programming Exercises",
+        "journal": "ACM Transactions on Computing Education",
+        "volume": "19",
+        "number": "1",
+        "pages": "3:1--3:43",
+        "year": "2019",
+        "doi": "10.1145/3231711"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.1145%2F3231711",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.1145/3231711",
+        "title": [
+          "A Systematic Literature Review of Automated Feedback Generation for Programming Exercises"
+        ],
+        "author": [
+          {
+            "given": "Hieke",
+            "family": "Keuning",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Open University of the Netherlands and Windesheim University of Applied Sciences"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Johan",
+            "family": "Jeuring",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Utrecht University and Open University of the Netherlands"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Bastiaan",
+            "family": "Heeren",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Open University of the Netherlands"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "ACM Transactions on Computing Education"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2019,
+              3,
+              31
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2018,
+              9,
+              28
+            ]
+          ]
+        },
+        "volume": "19",
+        "issue": "1",
+        "page": "1-43",
+        "article-number": null,
+        "URL": "https://doi.org/10.1145/3231711"
+      }
+    },
+    {
+      "key": "cameron2015cluster",
+      "local": {
+        "author": "Cameron, A. Colin and Miller, Douglas L.",
+        "title": "A Practitioner's Guide to Cluster-Robust Inference",
+        "journal": "Journal of Human Resources",
+        "volume": "50",
+        "number": "2",
+        "pages": "317--372",
+        "year": "2015",
+        "doi": "10.3368/jhr.50.2.317"
+      },
+      "metadata_source": "https://api.crossref.org/works/10.3368%2Fjhr.50.2.317",
+      "status": "resolved_exact_doi",
+      "registered": {
+        "DOI": "10.3368/jhr.50.2.317",
+        "title": [
+          "A Practitioner’s Guide to Cluster-Robust Inference"
+        ],
+        "author": [
+          {
+            "given": "A.",
+            "family": "Colin Cameron",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Douglas L.",
+            "family": "Miller",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Journal of Human Resources"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2015
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2015,
+              4,
+              28
+            ]
+          ]
+        },
+        "volume": "50",
+        "issue": "2",
+        "page": "317-372",
+        "article-number": null,
+        "URL": "https://doi.org/10.3368/jhr.50.2.317"
+      }
+    }
+  ]
+}

@@ -1,6 +1,8 @@
 # Bản sửa theo review ICCIES 2027
 
-Ngày: 29/10/2026. Branch: `quanghieu`.
+Ngày: 29/10/2026. Branch của vòng sửa trước: `quanghieu`.
+
+**Cập nhật `codex-review`:** Xem `SELF_REVIEW.md` cho vòng sửa và kiểm tra mới nhất. Bảng item và hình cấu hình hiện dùng CI theo repository; hồi quy thêm biến cấu hình; RQ3 dùng student fixed effects; thư mục tham khảo có 36 mục. Những con số CI/mô hình mô tả bên dưới là lịch sử vòng sửa trước nếu khác bản hiện tại.
 
 ## Đã sửa
 
