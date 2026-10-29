@@ -1,0 +1,196 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{https://doi.org/#1}
+
+\bibitem{carless2018feedback}
+Carless, D., Boud, D.: The development of student feedback literacy: Enabling
+  uptake of feedback. Assessment \& Evaluation in Higher Education
+  \textbf{43}(8),  1315--1325 (2018). \doi{10.1080/02602938.2018.1463354}
+
+\bibitem{cronbach1951coefficient}
+Cronbach, L.J.: Coefficient alpha and the internal structure of tests.
+  Psychometrika  \textbf{16}(3),  297--334 (1951). \doi{10.1007/BF02310555}
+
+\bibitem{dai2023can}
+Dai, W., Lin, J., Jin, H., Li, T., Tsai, Y.S., Ga{\v{s}}evi{\'c}, D., Chen, G.:
+  Can large language models provide feedback to students? {A} case study on
+  {ChatGPT}. In: 2023 IEEE International Conference on Advanced Learning
+  Technologies (ICALT). pp. 323--325. IEEE (2023).
+  \doi{10.1109/ICALT58122.2023.00100}
+
+\bibitem{davis1989perceived}
+Davis, F.D.: Perceived usefulness, perceived ease of use, and user acceptance
+  of information technology. MIS Quarterly  \textbf{13}(3),  319--340 (1989).
+  \doi{10.2307/249008}
+
+\bibitem{denny2024computing}
+Denny, P., Prather, J., Becker, B.A., Finnie-Ansley, J., Hellas, A., Leinonen,
+  J., Luxton-Reilly, A., Reeves, B.N., Santos, E.A., Sarsa, S.: Computing
+  education in the era of generative {AI}. Communications of the ACM
+  \textbf{67}(2),  56--67 (2024). \doi{10.1145/3624720}
+
+\bibitem{dietvorst2015algorithm}
+Dietvorst, B.J., Simmons, J.P., Massey, C.: Algorithm aversion: People
+  erroneously avoid algorithms after seeing them err. Journal of Experimental
+  Psychology: General  \textbf{144}(1),  114--126 (2015).
+  \doi{10.1037/xge0000033}
+
+\bibitem{du2024improving}
+Du, Y., Li, S., Torralba, A., Tenenbaum, J.B., Mordatch, I.: Improving
+  factuality and reasoning in language models through multiagent debate. In:
+  Proceedings of the 41st International Conference on Machine Learning (ICML).
+  Proceedings of Machine Learning Research, vol.~235. PMLR (2024)
+
+\bibitem{er2025assessing}
+Er, E., Ak{\c{c}}ap{\i}nar, G., Bayaz{\i}t, A., Noroozi, O., Banihashem, S.K.:
+  Assessing student perceptions and use of instructor versus {AI}-generated
+  feedback. British Journal of Educational Technology  \textbf{56}(3),
+  1074--1091 (2025). \doi{10.1111/bjet.13558}
+
+\bibitem{escalante2023ai}
+Escalante, J., Pack, A., Barrett, A.: {AI}-generated feedback on writing:
+  Insights into efficacy and {ENL} student preference. International Journal of
+  Educational Technology in Higher Education  \textbf{20}, ~57 (2023).
+  \doi{10.1186/s41239-023-00425-2}
+
+\bibitem{friedman1937use}
+Friedman, M.: The use of ranks to avoid the assumption of normality implicit in
+  the analysis of variance. Journal of the American Statistical Association
+  \textbf{32}(200),  675--701 (1937). \doi{10.1080/01621459.1937.10503522}
+
+\bibitem{hattie2007power}
+Hattie, J., Timperley, H.: The power of feedback. Review of Educational
+  Research  \textbf{77}(1),  81--112 (2007). \doi{10.3102/003465430298487}
+
+\bibitem{hayes2020use}
+Hayes, A.F., Coutts, J.J.: Use omega rather than {Cronbach's} alpha for
+  estimating reliability. {But}\ldots. Communication Methods and Measures
+  \textbf{14}(1),  1--24 (2020). \doi{10.1080/19312458.2020.1718629}
+
+\bibitem{hellas2023exploring}
+Hellas, A., Leinonen, J., Sarsa, S., Koutcheme, C., Kujanp{\"a}{\"a}, L.,
+  Sorva, J.: Exploring the responses of large language models to beginner
+  programmers' help requests. In: Proceedings of the 2023 ACM Conference on
+  International Computing Education Research (ICER 2023), Volume 1. pp.
+  93--105. ACM (2023). \doi{10.1145/3568813.3600139}
+
+\bibitem{holm1979simple}
+Holm, S.: A simple sequentially rejective multiple test procedure. Scandinavian
+  Journal of Statistics  \textbf{6}(2),  65--70 (1979)
+
+\bibitem{jonsson2007use}
+Jonsson, A., Svingby, G.: The use of scoring rubrics: Reliability, validity and
+  educational consequences. Educational Research Review  \textbf{2}(2),
+  130--144 (2007). \doi{10.1016/j.edurev.2007.05.002}
+
+\bibitem{kasneci2023chatgpt}
+Kasneci, E., Sessler, K., K{\"u}chemann, S., Bannert, M., Dementieva, D.,
+  Fischer, F., Gasser, U., Groh, G., G{\"u}nnemann, S., H{\"u}llermeier, E.,
+  et~al.: {ChatGPT} for good? {On} opportunities and challenges of large
+  language models for education. Learning and Individual Differences
+  \textbf{103},  102274 (2023). \doi{10.1016/j.lindif.2023.102274}
+
+\bibitem{khosravi2022explainable}
+Khosravi, H., Buckingham~Shum, S., Chen, G., Conati, C., Tsai, Y.S., Kay, J.,
+  Knight, S., Martinez-Maldonado, R., Sadiq, S., Ga{\v{s}}evi{\'c}, D.:
+  Explainable artificial intelligence in education. Computers and Education:
+  Artificial Intelligence  \textbf{3},  100074 (2022).
+  \doi{10.1016/j.caeai.2022.100074}
+
+\bibitem{kiesler2023exploring}
+Kiesler, N., Lohr, D., Keuning, H.: Exploring the potential of large language
+  models to generate formative programming feedback. In: 2023 IEEE Frontiers in
+  Education Conference (FIE). pp.~1--5. IEEE (2023).
+  \doi{10.1109/FIE58773.2023.10343457}
+
+\bibitem{kim2019straightlining}
+Kim, Y., Dykema, J., Stevenson, J., Black, P., Moberg, D.P.: Straightlining:
+  Overview of measurement, comparison of indicators, and effects in mail--web
+  mixed-mode surveys. Social Science Computer Review  \textbf{37}(2),  214--233
+  (2019). \doi{10.1177/0894439317752406}
+
+\bibitem{lakens2017equivalence}
+Lakens, D.: Equivalence tests: A practical primer for $t$ tests, correlations,
+  and meta-analyses. Social Psychological and Personality Science
+  \textbf{8}(4),  355--362 (2017). \doi{10.1177/1948550617697177}
+
+\bibitem{lee2004trust}
+Lee, J.D., See, K.A.: Trust in automation: Designing for appropriate reliance.
+  Human Factors  \textbf{46}(1),  50--80 (2004).
+  \doi{10.1518/hfes.46.1.50_30392}
+
+\bibitem{lehtinen2021lets}
+Lehtinen, T., Santos, A.L., Sorva, J.: Let's ask students about their programs,
+  automatically. In: 2021 IEEE/ACM 29th International Conference on Program
+  Comprehension (ICPC). pp. 467--475. IEEE (2021).
+  \doi{10.1109/ICPC52881.2021.00054}
+
+\bibitem{liffiton2023codehelp}
+Liffiton, M., Sheese, B.E., Savelka, J., Denny, P.: {CodeHelp}: Using large
+  language models with guardrails for scalable support in programming classes.
+  In: Proceedings of the 23rd Koli Calling International Conference on
+  Computing Education Research. ACM (2023). \doi{10.1145/3631802.3631830}
+
+\bibitem{logg2019algorithm}
+Logg, J.M., Minson, J.A., Moore, D.A.: Algorithm appreciation: People prefer
+  algorithmic to human judgment. Organizational Behavior and Human Decision
+  Processes  \textbf{151},  90--103 (2019). \doi{10.1016/j.obhdp.2018.12.005}
+
+\bibitem{nazaretsky2024ai}
+Nazaretsky, T., Mejia-Domenzain, P., Swamy, V., Frej, J., K{\"a}ser, T.: {AI}
+  or human? {Evaluating} student feedback perceptions in higher education. In:
+  Technology Enhanced Learning for Inclusive and Equitable Quality Education
+  (EC-TEL 2024). Lecture Notes in Computer Science, vol. 15159, pp. 284--298.
+  Springer, Cham (2024)
+
+\bibitem{parkes2013feedback}
+Parkes, J., Abercrombie, S., McCarty, T.: Feedback sandwiches affect
+  perceptions but not performance. Advances in Health Sciences Education
+  \textbf{18}(3),  397--407 (2013). \doi{10.1007/s10459-012-9377-9}
+
+\bibitem{podsakoff2003common}
+Podsakoff, P.M., MacKenzie, S.B., Lee, J.Y., Podsakoff, N.P.: Common method
+  biases in behavioral research: A critical review of the literature and
+  recommended remedies. Journal of Applied Psychology  \textbf{88}(5),
+  879--903 (2003). \doi{10.1037/0021-9010.88.5.879}
+
+\bibitem{seabold2010statsmodels}
+Seabold, S., Perktold, J.: Statsmodels: Econometric and statistical modeling
+  with {Python}. In: Proceedings of the 9th Python in Science Conference (SciPy
+  2010). pp. 92--96 (2010). \doi{10.25080/Majora-92bf1922-011}
+
+\bibitem{shute2008focus}
+Shute, V.J.: Focus on formative feedback. Review of Educational Research
+  \textbf{78}(1),  153--189 (2008). \doi{10.3102/0034654307313795}
+
+\bibitem{vansonderen2013ineffectiveness}
+van Sonderen, E., Sanderman, R., Coyne, J.C.: Ineffectiveness of reverse
+  wording of questionnaire items: Let's learn from cows in the rain. PLoS ONE
+  \textbf{8}(7),  e68967 (2013). \doi{10.1371/journal.pone.0068967}
+
+\bibitem{venkatesh2003user}
+Venkatesh, V., Morris, M.G., Davis, G.B., Davis, F.D.: User acceptance of
+  information technology: Toward a unified view. MIS Quarterly  \textbf{27}(3),
+   425--478 (2003). \doi{10.2307/30036540}
+
+\bibitem{winstone2017supporting}
+Winstone, N.E., Nash, R.A., Parker, M., Rowntree, J.: Supporting learners'
+  agentic engagement with feedback: A systematic review and a taxonomy of
+  recipience processes. Educational Psychologist  \textbf{52}(1),  17--37
+  (2017). \doi{10.1080/00461520.2016.1207538}
+
+\bibitem{zhang2024students}
+Zhang, Z., Dong, Z., Shi, Y., Matsuda, N., Price, T., Xu, D.: Students'
+  perceptions and preferences of generative artificial intelligence feedback
+  for programming. In: Proceedings of the AAAI Conference on Artificial
+  Intelligence. vol.~38 (2024). \doi{10.1609/aaai.v38i21.30372}
+
+\bibitem{zheng2023judging}
+Zheng, L., Chiang, W.L., Sheng, Y., Zhuang, S., Wu, Z., Zhuang, Y., Lin, Z.,
+  Li, Z., Li, D., Xing, E.P., Zhang, H., Gonzalez, J.E., Stoica, I.: Judging
+  {LLM}-as-a-judge with {MT-Bench} and {Chatbot Arena}. In: Advances in Neural
+  Information Processing Systems 36 (NeurIPS 2023), Datasets and Benchmarks
+  Track (2023)
+
+\end{thebibliography}
