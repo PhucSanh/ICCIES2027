@@ -150,7 +150,9 @@ d["fb_len"] = d["fb"].map(lambda s: len(fb_text(s).split()))
 d["ai_score"] = d["fb"].map(fb_score)
 screen["ans_len_mean"] = float(d.ans_len.mean())
 def _models(s_):
-    try: return ",".join(json.loads(s_).get("models_involved") or [])
+    try:
+        j = json.loads(s_)
+        return ",".join((j.get("researching") or {}).get("models_involved") or j.get("models_involved") or [])
     except Exception: return ""
 screen["researching_models"] = d.loc[d.format == "Researching", "fb"].map(_models).value_counts().to_dict()
 R["screening"] = screen

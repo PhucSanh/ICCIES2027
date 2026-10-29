@@ -13,8 +13,8 @@ conference template if you prefer (both work; `\Description` is provided for v2.
 - `refs.bib` – 34 references, each checked against DOI / publisher / DBLP
 - `figures/` – vector PDFs produced by the analysis script (Fig. 1 is TikZ inside main.tex;
   `item_correlations.pdf` is not used in the paper, kept as supplementary)
-- `analysis/run_analysis.py` – full, reproducible analysis (seeded bootstrap)
-- `analysis/results.json` – every number used in the paper
+- `analysis/run_analysis.py` – original analysis (seeded student bootstrap)
+- `analysis/results.json` – original analysis results (model provenance corrected)
 - `analysis/tables/*.tex` – generated table bodies (already pasted into main.tex)
 
 ## Re-run the analysis
@@ -30,7 +30,30 @@ All 344 records (86 students x 4 formats) pass the screening rules
 RQ3 context type is read directly from the column "Nguồn sinh câu hỏi" (Codebase = raw code, Graph).
 Older versions and old exports are kept locally in `_archive/` (git-ignored).
 
-## Still to fill before submission (search for `TODO` in main.tex)
+## Revised analyses and source verification
+
+`REVISION_NOTES.md` records changes, completed checks and unresolved author inputs.
+`main.tex` is the revised source. The PDF must be rebuilt whenever the source changes.
+
+```bash
+python3 analysis/check_export.py "/path/to/PACE-BaiDaNop-DaDanhGiaAI-2026-10-29 (5).xlsx"
+```
+
+This independent audit needs numpy, pandas and openpyxl. It writes aggregate
+`analysis/source_audit.json`, including source SHA-256, nesting checks, repository
+bootstrap confidence intervals and student fixed-effects regressions with separate
+motivation and psychological-safety predictors. It does not copy the raw workbook
+or export identifiers/replies. Original mixed-model results remain in `results.json`;
+the revised predictor table uses the new within-student regression results.
+
+The original pipeline was rerun from the supplied workbook in an isolated temporary
+directory: all archived numeric values matched within absolute tolerance `1e-7`.
+All 86 Researching instances list both models under `researching.models_involved`;
+these are exported metadata, not an independent provider execution audit.
+
+## Still to fill before submission (search for `TODO` or `AUTHOR ACTION` in main.tex)
 - ORCIDs (optional)
 - citation of the earlier PACE paper (if published)
-- recruitment / voluntariness / grading / consent statement
+- voluntariness / grading / research consent / institutional review / data governance
+- exact question-generation API model ID/version and provider execution logs
+- same-input configuration example and expert audit if available
