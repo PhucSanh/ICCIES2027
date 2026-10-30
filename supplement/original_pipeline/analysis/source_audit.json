@@ -1,0 +1,927 @@
+{
+  "source": {
+    "filename": "PACE-BaiDaNop-DaDanhGiaAI-2026-10-29 (5).xlsx",
+    "sha256": "aa57ae5d8458ad5d968a6ec727020fd169eaf9a322c20bd11f14278725e2a240"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "openpyxl": "3.1.5"
+  },
+  "method": {
+    "bootstrap_clusters": "repository",
+    "replicates": 5000,
+    "seed": 20261029,
+    "interval": "percentile",
+    "within_model": "student fixed effects, repository bootstrap, separate motivation and safety"
+  },
+  "counts": {
+    "rows": 344,
+    "students": 86,
+    "repos": 28,
+    "questions": 190,
+    "formats": {
+      "Explainable": 86,
+      "Researching": 86,
+      "Rubric": 86,
+      "Sandwich": 86
+    },
+    "contexts": {
+      "Graph": 280,
+      "Codebase": 64
+    },
+    "straight_rows": 64
+  },
+  "nesting": {
+    "students_within_repository": true,
+    "questions_within_repository": true
+  },
+  "exported_researching_models": {
+    "DeepSeek-V3 (Code Inspector),Groq-GPT-OSS-120B (Pedagogical Synthesizer)": 86
+  },
+  "configuration_fidelity": {
+    "schema_counts": {
+      "Sandwich": {
+        "instances": 86,
+        "missing_required_fields": 0
+      },
+      "Rubric": {
+        "instances": 86,
+        "missing_required_fields": 1
+      },
+      "Explainable": {
+        "instances": 86,
+        "missing_required_fields": 0
+      },
+      "Researching": {
+        "instances": 86,
+        "missing_required_fields": 0
+      }
+    },
+    "complete_blocks_excluding_schema_deviation_students": 85,
+    "AAI_friedman_excluding_schema_deviation_students": 23.220720720720784
+  },
+  "original_result_checks": {
+    "item_mean_max_absolute_difference": 0.0,
+    "AAI_friedman_recomputed": 23.04444444444449,
+    "AAI_friedman_archived": 23.04444444444449,
+    "AAI_friedman_absolute_difference": 0.0
+  },
+  "means": {
+    "AAI": {
+      "mean": 4.071636212624584,
+      "ci95_repository": [
+        3.9035255809595206,
+        4.229103282672787
+      ]
+    },
+    "ACCURACY": {
+      "mean": 4.380813953488372,
+      "ci95_repository": [
+        4.136111111111111,
+        4.613095238095238
+      ]
+    },
+    "SPECIFICITY": {
+      "mean": 4.3604651162790695,
+      "ci95_repository": [
+        4.10362389135255,
+        4.596684210526315
+      ]
+    },
+    "CLARITY": {
+      "mean": 4.334302325581396,
+      "ci95_repository": [
+        4.092380372313843,
+        4.561708603896104
+      ]
+    },
+    "TRANSPARENCY": {
+      "mean": 4.287790697674419,
+      "ci95_repository": [
+        4.030102763997165,
+        4.5357250430292595
+      ]
+    },
+    "USEFULNESS": {
+      "mean": 4.093023255813954,
+      "ci95_repository": [
+        3.926760249554367,
+        4.243508574758574
+      ]
+    },
+    "ACTIONABILITY": {
+      "mean": 4.130813953488372,
+      "ci95_repository": [
+        3.904888069358178,
+        4.336206896551724
+      ]
+    },
+    "COMPETENCE TRUST": {
+      "mean": 4.174418604651163,
+      "ci95_repository": [
+        3.9394644062078275,
+        4.414894987935951
+      ]
+    },
+    "RELIABILITY": {
+      "mean": 3.877906976744186,
+      "ci95_repository": [
+        3.7317692454268294,
+        4.0148995535714285
+      ]
+    },
+    "FAIRNESS": {
+      "mean": 4.148255813953488,
+      "ci95_repository": [
+        3.978941769316909,
+        4.313220209515495
+      ]
+    },
+    "AFFECT": {
+      "mean": 3.5319767441860463,
+      "ci95_repository": [
+        3.376310483870968,
+        3.70625
+      ]
+    },
+    "PSYCHOLOGICAL SAFETY": {
+      "mean": 3.8313953488372094,
+      "ci95_repository": [
+        3.65,
+        3.9946142814009655
+      ]
+    },
+    "ACCEPTANCE": {
+      "mean": 4.090116279069767,
+      "ci95_repository": [
+        3.8994098932676517,
+        4.270348837209302
+      ]
+    },
+    "REJECTION": {
+      "mean": 2.869186046511628,
+      "ci95_repository": [
+        2.5604395604395602,
+        3.196231678880746
+      ]
+    },
+    "WILLINGNESS": {
+      "mean": 3.9651162790697674,
+      "ci95_repository": [
+        3.856699208614427,
+        4.0802496693121695
+      ]
+    },
+    "BEHAVIORAL INTENTION": {
+      "mean": 3.796511627906977,
+      "ci95_repository": [
+        3.653393308080808,
+        3.9375
+      ]
+    }
+  },
+  "configuration_means": {
+    "Sandwich": {
+      "AAI": {
+        "mean": 4.121262458471761,
+        "ci95_repository": [
+          3.9170635689378432,
+          4.305907251789603
+        ]
+      },
+      "PQ": {
+        "mean": 4.3604651162790695,
+        "ci95_repository": [
+          4.097810990338164,
+          4.605574712643677
+        ]
+      },
+      "PU": {
+        "mean": 4.273255813953488,
+        "ci95_repository": [
+          4.004779411764706,
+          4.516858720633299
+        ]
+      },
+      "TR": {
+        "mean": 4.124031007751938,
+        "ci95_repository": [
+          3.9130393610013177,
+          4.325670498084291
+        ]
+      },
+      "AF": {
+        "mean": 3.738372093023256,
+        "ci95_repository": [
+          3.5764705882352943,
+          3.9012646793134595
+        ]
+      },
+      "AI": {
+        "mean": 3.953488372093023,
+        "ci95_repository": [
+          3.777777777777777,
+          4.117892610888133
+        ]
+      }
+    },
+    "Rubric": {
+      "AAI": {
+        "mean": 4.007475083056479,
+        "ci95_repository": [
+          3.8374268328020857,
+          4.166673136645963
+        ]
+      },
+      "PQ": {
+        "mean": 4.334302325581396,
+        "ci95_repository": [
+          4.082352044476327,
+          4.572388478818999
+        ]
+      },
+      "PU": {
+        "mean": 4.005813953488372,
+        "ci95_repository": [
+          3.8333333333333335,
+          4.168542710166509
+        ]
+      },
+      "TR": {
+        "mean": 3.914728682170543,
+        "ci95_repository": [
+          3.729405637254902,
+          4.0958568548387095
+        ]
+      },
+      "AF": {
+        "mean": 3.645348837209302,
+        "ci95_repository": [
+          3.513492131371878,
+          3.7857142857142856
+        ]
+      },
+      "AI": {
+        "mean": 3.906976744186046,
+        "ci95_repository": [
+          3.758603585112206,
+          4.05813953488372
+        ]
+      }
+    },
+    "Explainable": {
+      "AAI": {
+        "mean": 4.0656146179401995,
+        "ci95_repository": [
+          3.9009695165945173,
+          4.223871555273995
+        ]
+      },
+      "PQ": {
+        "mean": 4.3895348837209305,
+        "ci95_repository": [
+          4.148117124856816,
+          4.622255747126436
+        ]
+      },
+      "PU": {
+        "mean": 3.947674418604651,
+        "ci95_repository": [
+          3.789765251196172,
+          4.102409638554217
+        ]
+      },
+      "TR": {
+        "mean": 4.112403100775193,
+        "ci95_repository": [
+          3.9255295819335574,
+          4.296749359616884
+        ]
+      },
+      "AF": {
+        "mean": 3.627906976744186,
+        "ci95_repository": [
+          3.4591746698679473,
+          3.8
+        ]
+      },
+      "AI": {
+        "mean": 3.9573643410852712,
+        "ci95_repository": [
+          3.821698504983389,
+          4.094019607843138
+        ]
+      }
+    },
+    "Researching": {
+      "AAI": {
+        "mean": 4.092192691029899,
+        "ci95_repository": [
+          3.92415343915344,
+          4.247623456790122
+        ]
+      },
+      "PQ": {
+        "mean": 4.27906976744186,
+        "ci95_repository": [
+          4.009245801033592,
+          4.531978607632677
+        ]
+      },
+      "PU": {
+        "mean": 4.22093023255814,
+        "ci95_repository": [
+          4.0,
+          4.419545551298425
+        ]
+      },
+      "TR": {
+        "mean": 4.116279069767442,
+        "ci95_repository": [
+          3.951743297851369,
+          4.265936329588015
+        ]
+      },
+      "AF": {
+        "mean": 3.7151162790697674,
+        "ci95_repository": [
+          3.572287483266399,
+          3.8720962532299743
+        ]
+      },
+      "AI": {
+        "mean": 3.984496124031007,
+        "ci95_repository": [
+          3.852379445449065,
+          4.113924050632911
+        ]
+      }
+    }
+  },
+  "AAI_pairs": [
+    {
+      "a": "Sandwich",
+      "b": "Rubric",
+      "mean_difference": 0.11378737541528236,
+      "ci90_repository": [
+        0.007639866291344157,
+        0.21167558486809362
+      ],
+      "within_exploratory_margin_025": true
+    },
+    {
+      "a": "Sandwich",
+      "b": "Explainable",
+      "mean_difference": 0.05564784053156145,
+      "ci90_repository": [
+        -0.027965667872500162,
+        0.12811056696926262
+      ],
+      "within_exploratory_margin_025": true
+    },
+    {
+      "a": "Sandwich",
+      "b": "Researching",
+      "mean_difference": 0.029069767441860475,
+      "ci90_repository": [
+        -0.06555838124723573,
+        0.11039734075448364
+      ],
+      "within_exploratory_margin_025": true
+    },
+    {
+      "a": "Rubric",
+      "b": "Explainable",
+      "mean_difference": -0.05813953488372093,
+      "ci90_repository": [
+        -0.11850738547167117,
+        -0.0032803822807697443
+      ],
+      "within_exploratory_margin_025": true
+    },
+    {
+      "a": "Rubric",
+      "b": "Researching",
+      "mean_difference": -0.08471760797342191,
+      "ci90_repository": [
+        -0.1615300324675325,
+        -0.014285714285714339
+      ],
+      "within_exploratory_margin_025": true
+    },
+    {
+      "a": "Explainable",
+      "b": "Researching",
+      "mean_difference": -0.026578073089700983,
+      "ci90_repository": [
+        -0.07578397212543553,
+        0.025348182283666143
+      ],
+      "within_exploratory_margin_025": true
+    }
+  ],
+  "additional_contrasts": {
+    "ACTIONABILITY": [
+      {
+        "a": "Sandwich",
+        "b": "Rubric",
+        "mean_difference": 0.36046511627906974,
+        "ci95_repository": [
+          0.14704088952654235,
+          0.5529474342928661
+        ],
+        "ci90_repository": [
+          0.18518518518518517,
+          0.5217391304347826
+        ]
+      },
+      {
+        "a": "Sandwich",
+        "b": "Explainable",
+        "mean_difference": 0.37209302325581395,
+        "ci95_repository": [
+          0.16128105302187615,
+          0.566697530864197
+        ],
+        "ci90_repository": [
+          0.19540229885057472,
+          0.5357142857142857
+        ]
+      },
+      {
+        "a": "Sandwich",
+        "b": "Researching",
+        "mean_difference": 0.046511627906976744,
+        "ci95_repository": [
+          -0.0898876404494382,
+          0.1772292545710265
+        ],
+        "ci90_repository": [
+          -0.06756756756756757,
+          0.15476190476190477
+        ]
+      },
+      {
+        "a": "Rubric",
+        "b": "Explainable",
+        "mean_difference": 0.011627906976744186,
+        "ci95_repository": [
+          -0.1368421052631579,
+          0.1590909090909091
+        ],
+        "ci90_repository": [
+          -0.1125,
+          0.13793103448275862
+        ]
+      },
+      {
+        "a": "Rubric",
+        "b": "Researching",
+        "mean_difference": -0.313953488372093,
+        "ci95_repository": [
+          -0.5111174242424242,
+          -0.10665957446808522
+        ],
+        "ci90_repository": [
+          -0.47959183673469385,
+          -0.13978494623655913
+        ]
+      },
+      {
+        "a": "Explainable",
+        "b": "Researching",
+        "mean_difference": -0.32558139534883723,
+        "ci95_repository": [
+          -0.5180951654720146,
+          -0.12631578947368421
+        ],
+        "ci90_repository": [
+          -0.483164588220768,
+          -0.1566076807228915
+        ]
+      }
+    ],
+    "ACCEPTANCE": [
+      {
+        "a": "Sandwich",
+        "b": "Rubric",
+        "mean_difference": 0.046511627906976744,
+        "ci95_repository": [
+          -0.12089768339768339,
+          0.18518518518518517
+        ],
+        "ci90_repository": [
+          -0.09090909090909091,
+          0.16470588235294117
+        ]
+      },
+      {
+        "a": "Sandwich",
+        "b": "Explainable",
+        "mean_difference": -0.011627906976744186,
+        "ci95_repository": [
+          -0.16455696202531644,
+          0.12162986156888585
+        ],
+        "ci90_repository": [
+          -0.13924050632911392,
+          0.1020524118738405
+        ]
+      },
+      {
+        "a": "Sandwich",
+        "b": "Researching",
+        "mean_difference": -0.023255813953488372,
+        "ci95_repository": [
+          -0.19767441860465115,
+          0.1363755980861242
+        ],
+        "ci90_repository": [
+          -0.16906338028169013,
+          0.11250880281690144
+        ]
+      },
+      {
+        "a": "Rubric",
+        "b": "Explainable",
+        "mean_difference": -0.05813953488372093,
+        "ci95_repository": [
+          -0.20430718475073315,
+          0.08421369689283445
+        ],
+        "ci90_repository": [
+          -0.17857142857142858,
+          0.0625
+        ]
+      },
+      {
+        "a": "Rubric",
+        "b": "Researching",
+        "mean_difference": -0.06976744186046512,
+        "ci95_repository": [
+          -0.2737171052631579,
+          0.12048192771084337
+        ],
+        "ci90_repository": [
+          -0.23657328805885683,
+          0.0967741935483871
+        ]
+      },
+      {
+        "a": "Explainable",
+        "b": "Researching",
+        "mean_difference": -0.011627906976744186,
+        "ci95_repository": [
+          -0.1764892032762472,
+          0.15294117647058825
+        ],
+        "ci90_repository": [
+          -0.14942528735632185,
+          0.12903225806451613
+        ]
+      }
+    ],
+    "AAI15": [
+      {
+        "a": "Sandwich",
+        "b": "Rubric",
+        "mean_difference": 0.10077519379844954,
+        "ci95_repository": [
+          -0.02008644333431296,
+          0.20815043695380758
+        ],
+        "ci90_repository": [
+          0.0016460905349793785,
+          0.19250462962962958
+        ]
+      },
+      {
+        "a": "Sandwich",
+        "b": "Explainable",
+        "mean_difference": 0.053488372093023234,
+        "ci95_repository": [
+          -0.03964458360799826,
+          0.13092441193344806
+        ],
+        "ci90_repository": [
+          -0.022818930041152288,
+          0.12016192141192143
+        ]
+      },
+      {
+        "a": "Sandwich",
+        "b": "Researching",
+        "mean_difference": 0.030232558139534824,
+        "ci95_repository": [
+          -0.07407638888888896,
+          0.11703703703703698
+        ],
+        "ci90_repository": [
+          -0.05602998065764026,
+          0.10411985018726583
+        ]
+      },
+      {
+        "a": "Rubric",
+        "b": "Explainable",
+        "mean_difference": -0.047286821705426314,
+        "ci95_repository": [
+          -0.11564983888292152,
+          0.011765946885083175
+        ],
+        "ci90_repository": [
+          -0.10238385598141693,
+          0.00440054327694782
+        ]
+      },
+      {
+        "a": "Rubric",
+        "b": "Researching",
+        "mean_difference": -0.07054263565891472,
+        "ci95_repository": [
+          -0.16225159461374916,
+          0.008771929824561372
+        ],
+        "ci90_repository": [
+          -0.1449724375538329,
+          -0.0022447215705642468
+        ]
+      },
+      {
+        "a": "Explainable",
+        "b": "Researching",
+        "mean_difference": -0.023255813953488403,
+        "ci95_repository": [
+          -0.08123028601978083,
+          0.03596775025799788
+        ],
+        "ci90_repository": [
+          -0.07166756272401435,
+          0.026373626373626304
+        ]
+      }
+    ]
+  },
+  "scoring_sensitivity": {
+    "AAI15_mean": 4.0089147286821705,
+    "AAI15_friedman": 19.192139737991386,
+    "nonstraight_complete_students": 64,
+    "nonstraight_complete_means": {
+      "Sandwich": 4.114955357142857,
+      "Rubric": 4.013392857142856,
+      "Explainable": 4.0546875,
+      "Researching": 4.0669642857142865
+    }
+  },
+  "within_student_models": {
+    "ACCEPTANCE": {
+      "bootstrap_valid": 5000,
+      "predictors": {
+        "PQ": {
+          "b": 0.2240878077625199,
+          "ci95_repository": [
+            0.017842484894976265,
+            0.43566719255244923
+          ]
+        },
+        "PU": {
+          "b": 0.32057132638177577,
+          "ci95_repository": [
+            0.16809225039488346,
+            0.4618843374349804
+          ]
+        },
+        "TR": {
+          "b": 0.23124274668625647,
+          "ci95_repository": [
+            0.09330267897168859,
+            0.4033634783364996
+          ]
+        },
+        "AFFECT": {
+          "b": -0.10165071647637305,
+          "ci95_repository": [
+            -0.21013341540037775,
+            0.023067214747274318
+          ]
+        },
+        "PSYCHOLOGICAL SAFETY": {
+          "b": -0.0391670192289673,
+          "ci95_repository": [
+            -0.11716969081314091,
+            0.013057502825335873
+          ]
+        }
+      }
+    },
+    "WILLINGNESS": {
+      "bootstrap_valid": 5000,
+      "predictors": {
+        "PQ": {
+          "b": 0.08663024320060152,
+          "ci95_repository": [
+            -0.1874468623362808,
+            0.36862368219292857
+          ]
+        },
+        "PU": {
+          "b": 0.0678646962312778,
+          "ci95_repository": [
+            -0.1149147246387515,
+            0.19423699149672036
+          ]
+        },
+        "TR": {
+          "b": 0.044708066789098236,
+          "ci95_repository": [
+            -0.09502598152894502,
+            0.2110844855469
+          ]
+        },
+        "AFFECT": {
+          "b": 0.24959671640320708,
+          "ci95_repository": [
+            0.012940333249599263,
+            0.4551800079300847
+          ]
+        },
+        "PSYCHOLOGICAL SAFETY": {
+          "b": -0.013908425382257748,
+          "ci95_repository": [
+            -0.1550510806511356,
+            0.08192093690337207
+          ]
+        }
+      }
+    },
+    "BEHAVIORAL INTENTION": {
+      "bootstrap_valid": 5000,
+      "predictors": {
+        "PQ": {
+          "b": 0.07142013548215707,
+          "ci95_repository": [
+            -0.154003173576324,
+            0.325473730788705
+          ]
+        },
+        "PU": {
+          "b": 0.23276830636201623,
+          "ci95_repository": [
+            0.07178750101076056,
+            0.3692304422524153
+          ]
+        },
+        "TR": {
+          "b": 0.14534928284233356,
+          "ci95_repository": [
+            -0.10266995800763606,
+            0.39745375758766976
+          ]
+        },
+        "AFFECT": {
+          "b": -0.05110892769264522,
+          "ci95_repository": [
+            -0.18454527606284077,
+            0.09365985541114649
+          ]
+        },
+        "PSYCHOLOGICAL SAFETY": {
+          "b": 0.06981579185156792,
+          "ci95_repository": [
+            -0.09189294149506214,
+            0.248254942760109
+          ]
+        }
+      }
+    }
+  },
+  "within_student_models_configuration_adjusted": {
+    "ACCEPTANCE": {
+      "PQ": {
+        "b": 0.19230105246114798,
+        "ci95_repository": [
+          -0.02687671094823626,
+          0.40532038269317006
+        ]
+      },
+      "PU": {
+        "b": 0.36171113419154804,
+        "ci95_repository": [
+          0.20291694085207318,
+          0.5095209080451311
+        ]
+      },
+      "TR": {
+        "b": 0.243171457983488,
+        "ci95_repository": [
+          0.09410291560494329,
+          0.424465399475324
+        ]
+      },
+      "AFFECT": {
+        "b": -0.09147704243692686,
+        "ci95_repository": [
+          -0.20054521803436634,
+          0.03278263480807091
+        ]
+      },
+      "PSYCHOLOGICAL SAFETY": {
+        "b": -0.05143042550132709,
+        "ci95_repository": [
+          -0.12481467290906273,
+          0.002236453214717962
+        ]
+      }
+    },
+    "WILLINGNESS": {
+      "PQ": {
+        "b": 0.03279723784005547,
+        "ci95_repository": [
+          -0.22536335230711138,
+          0.31562849865285375
+        ]
+      },
+      "PU": {
+        "b": 0.13700907007139482,
+        "ci95_repository": [
+          -0.05742111781046916,
+          0.2488216107522446
+        ]
+      },
+      "TR": {
+        "b": 0.055662134390028165,
+        "ci95_repository": [
+          -0.0804000719126338,
+          0.22046615954485535
+        ]
+      },
+      "AFFECT": {
+        "b": 0.26646752279665903,
+        "ci95_repository": [
+          0.028189905544073766,
+          0.4600009826465464
+        ]
+      },
+      "PSYCHOLOGICAL SAFETY": {
+        "b": -0.03120471919807015,
+        "ci95_repository": [
+          -0.16731992068515128,
+          0.0700388900503867
+        ]
+      }
+    },
+    "BEHAVIORAL INTENTION": {
+      "PQ": {
+        "b": 0.09660382310092588,
+        "ci95_repository": [
+          -0.13986507615680016,
+          0.35557573624388367
+        ]
+      },
+      "PU": {
+        "b": 0.21345578846853225,
+        "ci95_repository": [
+          0.055349536347958264,
+          0.3517482641662703
+        ]
+      },
+      "TR": {
+        "b": 0.12927978827639078,
+        "ci95_repository": [
+          -0.13536041585042108,
+          0.400220353077012
+        ]
+      },
+      "AFFECT": {
+        "b": -0.050899036005872186,
+        "ci95_repository": [
+          -0.19684462106266695,
+          0.10123457239465096
+        ]
+      },
+      "PSYCHOLOGICAL SAFETY": {
+        "b": 0.07251260213146678,
+        "ci95_repository": [
+          -0.09492499850633622,
+          0.25162732169367263
+        ]
+      }
+    }
+  },
+  "context_within_student": {
+    "b_raw": 0.07234924044805881,
+    "ci95_repository": [
+      -0.024221168835374122,
+      0.19535722063215522
+    ],
+    "specification": "student fixed effects and configuration indicators; repository bootstrap"
+  },
+  "limitations": [
+    "Exported model names are metadata, not independent provider logs.",
+    "No causal comparison of individual configuration features.",
+    "Context is selected by method count; no isolated raw-code/graph effect.",
+    "Original mixed models and signed-rank tests are not rerun by this script."
+  ]
+}

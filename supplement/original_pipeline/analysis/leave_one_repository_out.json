@@ -1,0 +1,153 @@
+{
+  "method": "Delete one entire repository and refit; point estimate ranges, not CIs",
+  "rows": 344,
+  "students": 86,
+  "repositories": 28,
+  "students_per_repository": {
+    "min": 1,
+    "median": 3.0,
+    "max": 5
+  },
+  "contrasts": [
+    {
+      "a": "Sandwich",
+      "b": "Rubric",
+      "AAI": {
+        "full_mean_difference": 0.11378737541528236,
+        "leave_one_repository_out_min": 0.0816326530612245,
+        "leave_one_repository_out_max": 0.1487394957983193,
+        "sign_reversals": 0
+      },
+      "ACCEPTANCE": {
+        "full_mean_difference": 0.046511627906976744,
+        "leave_one_repository_out_min": 0.023809523809523808,
+        "leave_one_repository_out_max": 0.08333333333333333,
+        "sign_reversals": 0
+      },
+      "ACTIONABILITY": {
+        "full_mean_difference": 0.36046511627906974,
+        "leave_one_repository_out_min": 0.3170731707317073,
+        "leave_one_repository_out_max": 0.4024390243902439,
+        "sign_reversals": 0
+      }
+    },
+    {
+      "a": "Sandwich",
+      "b": "Explainable",
+      "AAI": {
+        "full_mean_difference": 0.05564784053156145,
+        "leave_one_repository_out_min": 0.04268292682926829,
+        "leave_one_repository_out_max": 0.08655462184873947,
+        "sign_reversals": 0
+      },
+      "ACCEPTANCE": {
+        "full_mean_difference": -0.011627906976744186,
+        "leave_one_repository_out_min": -0.036585365853658534,
+        "leave_one_repository_out_max": 0.023529411764705882,
+        "sign_reversals": 4
+      },
+      "ACTIONABILITY": {
+        "full_mean_difference": 0.37209302325581395,
+        "leave_one_repository_out_min": 0.34146341463414637,
+        "leave_one_repository_out_max": 0.4117647058823529,
+        "sign_reversals": 0
+      }
+    },
+    {
+      "a": "Sandwich",
+      "b": "Researching",
+      "AAI": {
+        "full_mean_difference": 0.029069767441860475,
+        "leave_one_repository_out_min": 0.010452961672473858,
+        "leave_one_repository_out_max": 0.06050420168067224,
+        "sign_reversals": 0
+      },
+      "ACCEPTANCE": {
+        "full_mean_difference": -0.023255813953488372,
+        "leave_one_repository_out_min": -0.04878048780487805,
+        "leave_one_repository_out_max": 0.023809523809523808,
+        "sign_reversals": 2
+      },
+      "ACTIONABILITY": {
+        "full_mean_difference": 0.046511627906976744,
+        "leave_one_repository_out_min": 0.012345679012345678,
+        "leave_one_repository_out_max": 0.07228915662650602,
+        "sign_reversals": 0
+      }
+    },
+    {
+      "a": "Rubric",
+      "b": "Explainable",
+      "AAI": {
+        "full_mean_difference": -0.05813953488372093,
+        "leave_one_repository_out_min": -0.06966490299823634,
+        "leave_one_repository_out_max": -0.03571428571428571,
+        "sign_reversals": 0
+      },
+      "ACCEPTANCE": {
+        "full_mean_difference": -0.05813953488372093,
+        "leave_one_repository_out_min": -0.08641975308641975,
+        "leave_one_repository_out_max": -0.023809523809523808,
+        "sign_reversals": 0
+      },
+      "ACTIONABILITY": {
+        "full_mean_difference": 0.011627906976744186,
+        "leave_one_repository_out_min": -0.023809523809523808,
+        "leave_one_repository_out_max": 0.037037037037037035,
+        "sign_reversals": 3
+      }
+    },
+    {
+      "a": "Rubric",
+      "b": "Researching",
+      "AAI": {
+        "full_mean_difference": -0.08471760797342191,
+        "leave_one_repository_out_min": -0.10052910052910052,
+        "leave_one_repository_out_max": -0.05017006802721088,
+        "sign_reversals": 0
+      },
+      "ACCEPTANCE": {
+        "full_mean_difference": -0.06976744186046512,
+        "leave_one_repository_out_min": -0.11904761904761904,
+        "leave_one_repository_out_max": 0.0,
+        "sign_reversals": 0
+      },
+      "ACTIONABILITY": {
+        "full_mean_difference": -0.313953488372093,
+        "leave_one_repository_out_min": -0.37037037037037035,
+        "leave_one_repository_out_max": -0.2682926829268293,
+        "sign_reversals": 0
+      }
+    },
+    {
+      "a": "Explainable",
+      "b": "Researching",
+      "AAI": {
+        "full_mean_difference": -0.026578073089700983,
+        "leave_one_repository_out_min": -0.038265306122448974,
+        "leave_one_repository_out_max": -0.010452961672473858,
+        "sign_reversals": 0
+      },
+      "ACCEPTANCE": {
+        "full_mean_difference": -0.011627906976744186,
+        "leave_one_repository_out_min": -0.036585365853658534,
+        "leave_one_repository_out_max": 0.036585365853658534,
+        "sign_reversals": 3
+      },
+      "ACTIONABILITY": {
+        "full_mean_difference": -0.32558139534883723,
+        "leave_one_repository_out_min": -0.38271604938271603,
+        "leave_one_repository_out_max": -0.2926829268292683,
+        "sign_reversals": 0
+      }
+    }
+  ],
+  "context": {
+    "informative_students": 26,
+    "informative_repositories": 12,
+    "full_b_raw": 0.07234924044805881,
+    "leave_one_repository_out_min": 0.04673380119207837,
+    "leave_one_repository_out_max": 0.11355014803848995,
+    "full_rank_fits": 28
+  }
+}

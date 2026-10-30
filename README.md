@@ -105,3 +105,13 @@ The official submission page also prohibits AI-generated text and contains a
 2026/2027 wording inconsistency. Authors must clarify its applicability before
 submitting text revised with AI assistance. See the linked evidence in the
 reference audit. No conference submission is performed by this branch.
+
+## Five-issue revision and supplement
+
+Read `FIVE_ISSUE_RESPONSE.md` for the latest changes. `supplement/README.md`
+documents aggregate-only reproduction of RQ3 Acceptance and the exploratory
+90-comparison multiplicity sensitivity. `PACE_supplement.zip` is prepared locally
+for author review; it has not been published. The main paper remains 15 pages.
+Ethics text now reports the classroom permission, purpose announcement and
+voluntary participation actually confirmed by the authors; no institutional
+approval/exemption is inferred from permission to enter classes.
