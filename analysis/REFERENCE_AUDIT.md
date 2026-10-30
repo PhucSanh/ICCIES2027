@@ -78,3 +78,15 @@ requires English, LNCS/LNAI style, and 12–15 pages. It also explicitly prohibi
 AI-generated text; the following explanatory paragraph still says ICCIES 2026.
 The authors must clarify the applicable policy before submission. This branch
 is a review artifact, not a certification of submission compliance or ethics.
+
+## Addition in the 30 October revision
+
+Added `lehtinen2024askai` (37 references in the revised bibliography). Checked the
+[authors' arXiv record](https://arxiv.org/abs/2404.11734): title, author order,
+2024 date, arXiv identifier and DataCite DOI 10.48550/arXiv.2404.11734. The abstract
+supports the narrow comparison of LLM responses to QLCs on model-generated
+programs and warns about tracing errors. This was an abstract-level check, not
+a new full-text systematic literature review. The earlier 33-DOI Crossref audit
+remains historical; it does not cover this DataCite DOI. The current
+`verify_references.py` uses Crossref and should not be interpreted as a successful
+DataCite resolver for this added record.

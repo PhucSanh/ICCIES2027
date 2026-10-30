@@ -1,0 +1,38 @@
+{
+  "status": "research_eligibility_hold",
+  "source_sha256": "aa57ae5d8458ad5d968a6ec727020fd169eaf9a322c20bd11f14278725e2a240",
+  "private_evidence_sha256": {
+    "manifest.json": "b470ba1fc14ea1539ebd99cbb587553cbea1982bd1bf4c6ceb2d13168aa4987c",
+    "before.json": "ba82f0a89d0e6a7a30c74a049049ddc4a0e5ec6344f796241d06a54e55c8f46d",
+    "after.json": "864dd0529ebd52711f8b8caddc8529bca16559eed617ef24398bc96aacf55f21"
+  },
+  "export_rows": 344,
+  "export_students": 86,
+  "known_demo_manifest_rows": 144,
+  "matching_demo_export_rows": 144,
+  "matching_demo_students": 36,
+  "ratings_compared_to_demo_after_snapshot": 2160,
+  "ratings_exactly_matching_demo_snapshot": 2160,
+  "generation_review_files_compared": 144,
+  "generated_review_origins": {
+    "ai_simulated_demo": 144
+  },
+  "generated_review_models": {
+    "gpt-6-luna": 144
+  },
+  "export_ratings_matching_generated_reviews": 2160,
+  "export_replies_matching_generated_reviews": 144,
+  "application_receipt": {
+    "status": "committed",
+    "origin": "ai_simulated_demo",
+    "rating_rows": 2160,
+    "scores_changed": 1725,
+    "replies_updated": 144,
+    "post_commit_verified": true,
+    "committed_utc": "2026-10-29T09:10:02.921404+00:00"
+  },
+  "remaining_rows_not_in_this_manifest": 200,
+  "remaining_students_not_in_this_manifest": 50,
+  "interpretation": "Known simulated demo ratings contaminate the analysed export. Remaining rows require independent human-response provenance confirmation; absence from this manifest alone does not verify them.",
+  "scope": "Read-only workbook and local JSON comparison; no database access, provider calls, identifiers or individual text exported."
+}

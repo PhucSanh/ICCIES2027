@@ -54,7 +54,7 @@ def main():
     assert all(p['ci95_repository'][0]<0<p['ci95_repository'][1] for p in a['additional_contrasts']['ACCEPTANCE'])
     # Ensure generated manuscript blocks match the actual generated table files.
     source = (root/'main.tex').read_text()
-    for name in ['rq1_items','within_student_models']:
+    for name in ['rq1_items','within_student_models','paired_contrasts']:
         body = source.split('% BEGIN GENERATED '+name+'\n')[1].split('% END GENERATED '+name)[0]
         assert body == (root/'analysis/tables'/f'{name}.tex').read_text(),name
     # Public artifacts must remain aggregate-only and strict JSON.

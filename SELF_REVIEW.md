@@ -1,3 +1,5 @@
+> Cập nhật 30/10/2026: xem [REVISION_RESPONSE_20261030.md](REVISION_RESPONSE_20261030.md) cho vòng sửa sau phản biện và đính chính phạm vi audit nguồn phản hồi. Những mô tả phiên bản cũ bên dưới là lịch sử; không thay thế thông tin mới.
+
 # Self-review of the codex-review revision
 
 Review date: 29 October 2026. Base: local `quanghieu` checkout, clean before

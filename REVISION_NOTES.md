@@ -1,3 +1,5 @@
+> Cập nhật 30/10/2026: xem [REVISION_RESPONSE_20261030.md](REVISION_RESPONSE_20261030.md) cho vòng sửa sau phản biện và đính chính phạm vi audit nguồn phản hồi. Những mô tả phiên bản cũ bên dưới là lịch sử; không thay thế thông tin mới.
+
 # Bản sửa theo review ICCIES 2027
 
 Ngày: 29/10/2026. Branch của vòng sửa trước: `quanghieu`.

@@ -131,6 +131,11 @@ Lee, J.D., See, K.A.: Trust in automation: Designing for appropriate reliance.
   Human Factors  \textbf{46}(1),  50--80 (2004).
   \doi{10.1518/hfes.46.1.50_30392}
 
+\bibitem{lehtinen2024askai}
+Lehtinen, T., Koutcheme, C., Hellas, A.: Let's ask {AI} about their programs:
+  Exploring {ChatGPT}'s answers to program comprehension questions.
+  arXiv:2404.11734 (2024). \doi{10.48550/arXiv.2404.11734}
+
 \bibitem{lehtinen2021lets}
 Lehtinen, T., Santos, A.L., Sorva, J.: Let's ask students about their programs,
   automatically. In: 2021 IEEE/ACM 29th International Conference on Program

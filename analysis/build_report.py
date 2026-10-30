@@ -14,7 +14,7 @@ audit = json.loads((ROOT/'analysis/source_audit.json').read_text())
 original = json.loads((ROOT/'analysis/results.json').read_text())
 rows = []
 for x in original['rq1_items']:
-    name = x['item'].title().replace('Behavioral Intention','Behav.\\ intention').replace('Psychological Safety','Psych.\\ safety').replace('Competence Trust','Competence trust')
+    name = x['item'].title().replace('Behavioral Intention','Behav.\\ intention').replace('Psychological Safety','Psych.\\ safety').replace('Competence Trust','Competence trust').replace('Affect','Motivation')
     if x['item'] == 'REJECTION': name += '$^\\dagger$'
     lo, hi = audit['means'][x['item']]['ci95_repository']
     rows.append(f"{name} & {x['mean']:.2f} ({x['sd']:.2f}) & [{lo:.2f}, {hi:.2f}] & {x['agree']:.1f} & {x['disagree']:.1f} \\\\")

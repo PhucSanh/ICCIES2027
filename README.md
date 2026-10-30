@@ -5,6 +5,17 @@ Read `SELF_REVIEW.md` for evidence, limitations and author confirmations still
 needed before submission. The branch is ready for critical review; it is not a
 claim that ethics or conference-policy requirements have been resolved.
 
+## Revision after the 30 October review
+
+See `REVISION_RESPONSE_20261030.md` for the reviewer-response matrix and current
+validation. Acceptance is now the direct agreement outcome; all six paired
+Acceptance and secondary AAI contrasts are reported. Nearest-work positioning,
+margin sensitivity and voluntary recruitment have been clarified. The authors
+confirm human completion of all 344 ratings (86 students × four configurations).
+Local demo snapshot matches do not constitute an authenticated production-DB
+audit; the discrepancy and author clarification are preserved in the response
+note. No database was accessed or modified during this revision.
+
 ## Build
 
 ```bash
@@ -23,7 +34,7 @@ should be checked for pagination independently. ICCIES specifies 12–15 pages.
 ## Files
 
 - `main.tex`, `main.pdf`, `main.bbl`: revised article and compiled artifacts.
-- `refs.bib`: 36 references. Verification scope and evidence are in
+- `refs.bib`: 37 references. Verification scope and evidence are in
   `analysis/REFERENCE_AUDIT.md`; raw registry metadata are in
   `analysis/reference_metadata_audit.json`.
 - `analysis/run_analysis.py`, `analysis/results.json`: original statistical
@@ -50,6 +61,8 @@ python3 -m pip install numpy pandas openpyxl scipy statsmodels matplotlib
 python3 analysis/run_analysis.py "/path/to/PACE-BaiDaNop-DaDanhGiaAI-2026-10-29 (5).xlsx"
 python3 analysis/check_export.py "/path/to/PACE-BaiDaNop-DaDanhGiaAI-2026-10-29 (5).xlsx"
 python3 analysis/build_report.py
+python3 analysis/build_contrasts.py
+python3 analysis/leave_one_repository_out.py "/path/to/PACE-BaiDaNop-DaDanhGiaAI-2026-10-29 (5).xlsx"
 python3 analysis/validate_revision.py "/path/to/PACE-BaiDaNop-DaDanhGiaAI-2026-10-29 (5).xlsx"
 ```
 
@@ -61,7 +74,7 @@ aggregate JSON and exports no individual student text. Public results now
 contain reply counts only; raw replies are not regenerated into public JSON.
 Existing Git history has not been rewritten.
 
-All 344 records (86 students × four configurations) pass export screening. There
+All 344 records (86 students × four configurations) pass structural export screening; this is not independent authentication of respondent origin. There
 are 28 repositories and 190 questions. Both students and questions are nested
 within repositories. One assigned Rubric output is a guardrail refusal; it stays
 in the assigned-label analysis and has a block-exclusion sensitivity check.
